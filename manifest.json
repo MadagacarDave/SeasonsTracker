@@ -1,0 +1,25 @@
+﻿{
+  "name": "Oracle of Seasons Randomizer",
+  "game_name": "Zelda Oracles Randomizer",
+  "package_version": "2.4.1.0",
+  "package_uid": "oos_items_and_map_herreteman",
+  "author": "Herreteman",
+  
+  "variants": {
+    "standard": {
+      "display_name": "Map tracker - Normal logic"
+    },
+    "hard": {
+      "display_name": "Map tracker - Hard Logic"
+    },
+    "items_only": {
+      "display_name": "Items only"
+    },
+	"dungeon_shuffle": {
+      "display_name": "Dungeon shuffle - Normal Logic"
+    },
+    "dungeon_shuffle_hard": {
+      "display_name": "Dungeon shuffle - Hard Logic"
+    },
+  }
+}
