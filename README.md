@@ -10,5 +10,5 @@ EmoTracker has a built in dev mode to use this code in that mode:
 - clone this repo in packs
 - start up Emotracker with a `-dev` (I just created a new shortcut and added it) 
 
-Now any changes you make will be loaded into EmoTracker (from what I can tell, you do have to close EmoTracker and reopen it to get any new changes)
+Now any changes you make will be loaded into EmoTracker. If you make more changes, hit "reset tracker button" to load the new changes
 
