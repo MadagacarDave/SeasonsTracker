@@ -2376,7 +2376,7 @@
 							"name": "Gibdo room \nchest",
 							"access_rules": [
 								// Can get every single chest in D6
-								"$d6clear",,
+								"$d6clear",
 								
 								"d6sk:3",
 								"d6sk:1, [d6sk:3]"
