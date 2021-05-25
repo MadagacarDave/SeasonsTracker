@@ -145,8 +145,20 @@ function suburbs_hard()
 	--suburbs_sunken() or NOT BLOCKED BY SPRING ANYMORE
 	suburbs_natzu()
 end
-
-
+function suburbs_from_south()
+	return (use_seeds() and has("emberseeds")) or 
+	suburbs_swamp() or
+	suburbs_lake() or
+	suburbs_temple() or
+	suburbs_hns() 
+end
+function suburbs_from_south_hard()
+	return (use_seeds() and has("emberseeds")) or 
+	suburbs_swamp() or
+	suburbs_lake() or
+	suburbs_temple_hard() or
+	suburbs_hns_hard()
+end
 
 function suburbs_swamp()
 --portal_swamp() doesn't work? TODO
@@ -214,6 +226,7 @@ end
 
 function fairy_fountain_natzu()
 	return north_stump() and has("bracelet") and
+	(has("suburbs_spring") or has("spring")) and
 	--cross natzu
 	((has("natzu_dimitri") and (dimitri() or has("flippers")) and max_jump() >= 1) or --cross dimitri's natzu
 	(has("natzu_moosh") and (moosh() or (destroy_bush_flute() and max_jump() >= 3))) or --crosh Moosh's natzu
@@ -221,6 +234,7 @@ function fairy_fountain_natzu()
 end
 function fairy_fountain_natzu_hard()
 	return north_stump() and has("bracelet") and
+	(has("suburbs_spring") or has("spring")) and
 	--cross natzu
 	((has("natzu_dimitri") and (dimitri() or has("flippers")) and max_jump() >= 1) or --cross dimitri's natzu
 	(has("natzu_moosh") and (moosh() or 
