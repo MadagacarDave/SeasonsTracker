@@ -1,9 +1,9 @@
 ﻿{
   "name": "Oracle of Seasons Randomizer",
   "game_name": "Zelda Oracles Randomizer",
-  "package_version": "2.4.1.0",
-  "package_uid": "oos_items_and_map_herreteman",
-  "author": "Herreteman",
+  "package_version": "2.4.1.1",
+  "package_uid": "oos_items_and_map",
+  "author": "Herreteman MadagascarDave",
   
   "variants": {
     "standard": {
@@ -20,6 +20,6 @@
     },
     "dungeon_shuffle_hard": {
       "display_name": "Dungeon shuffle - Hard Logic"
-    },
+    }
   }
 }
