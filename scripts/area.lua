@@ -381,14 +381,14 @@ end
 function swamp_stump()
 	return pegasus_tree() and
 	(has("bracelet") or hit_lever()) and
-	((has("satchel") and has("pegasusseeds")) or has("flippers") or has("cape") or
+	((has("satchel") and has("pegasusseeds")) or has("flippers") or has("feather") or
 	(has("bombs") and max_jump() >= 2)) and
 	has("bracelet") and has("d3key")
 end
 function swamp_stump_hard()
 	return pegasus_tree_hard() and
 	(has("bracelet") or hit_lever()) and
-	((has("satchel") and has("pegasusseeds")) or has("flippers") or has("cape") or
+	((has("satchel") and has("pegasusseeds")) or has("flippers") or has("feather") or
 	(has("bombs") and max_jump() >= 2)) and
 	has("bracelet") and has("d3key")
 end
