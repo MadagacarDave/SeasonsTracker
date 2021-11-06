@@ -7,15 +7,17 @@ function d1_access_hard()
 	return d1_access_normal()
 end
 function d2_access_normal()
-	return (suburbs_from_south() and suburbs_to_fountain() and 
-	fountain_to_D2() and d2_A()) or 
-	(suburbs_natzu() and fountain_to_D2() and d2_A())
+	return (suburbs_from_south() and suburbs_to_fountain() and fountain_to_D2() and d2_A()) or 
+	(sunken_city() and natzu_to_suburbs() and fountain_to_D2() and d2_A()) or
+	(scent_tree() and natzu_to_moblin() and moblin_keep_to_sunken() and natzu_to_suburbs() and fountain_to_D2() and d2_A()) or
+	(mount_cucco() and has("flippers") and cucco_to_sunken() and suburbs_natzu() and fountain_to_D2() and d2_A())
 end
 
 function d2_access_hard()
-	return (suburbs_from_south_hard() and suburbs_to_fountain() and 
-	fountain_to_D2() and d2_A()) or 
-	(suburbs_natzu() and fountain_to_D2() and d2_A())
+	return (suburbs_from_south_hard() and suburbs_to_fountain() and fountain_to_D2() and d2_A()) or 
+	(sunken_city() and natzu_to_suburbs() and fountain_to_D2() and d2_A()) or
+	(scent_tree_hard() and natzu_to_moblin_hard() and moblin_keep_to_sunken() and natzu_to_suburbs() and fountain_to_D2() and d2_A()) or
+	(mount_cucco() and has("flippers") and cucco_to_sunken() and suburbs_natzu() and fountain_to_D2() and d2_A())
 end
 function d3_access_normal()
 	return enter_d3()
