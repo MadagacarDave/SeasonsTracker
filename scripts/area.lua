@@ -1161,7 +1161,7 @@ function d3clear_hard()
 end
 
 function d4clear()
-	return has("flippers") and destroy_pot() and 
+	return has("flippers") and has("bracelet") and 
 	has("bombs") and max_jump() >= 1 and 
 	shoot_seeds() and has("emberseeds") and 
 	kill_agunima() and kill_gohma()
