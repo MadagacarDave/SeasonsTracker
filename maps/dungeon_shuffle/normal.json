@@ -1257,8 +1257,11 @@
 					{
 						"name": "Outside D2",
 						"access_rules": [
-							"{$d2_access_normal}",
-							"{[$d2_access_normal], $d2_access_hard}"
+							"$suburbs_to_fountain, $fountain_to_D2",
+							
+							"$sunken_city, $natzu_to_suburbs, $fountain_to_D2",
+							"$scent_tree_hard, $natzu_to_moblin_hard, $moblin_keep_to_sunken, $natzu_to_suburbs, $fountain_to_D2",
+							"$mount_cucco, flippers, $cucco_to_sunken, $natzu_to_suburbs, $fountain_to_D2"
 						],
 						"sections": [
 						  {

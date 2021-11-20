@@ -11,7 +11,7 @@
 					{
 						"name": "Maku Tree",
 						"access_rules": [
-							"sword1",
+							"sword1"
 						],
 						"sections": [
 						  {
@@ -49,7 +49,7 @@
 					{
 						"name": "Mushroom chest",
 						"access_rules": [
-								"$destroy_mushroom",
+								"$destroy_mushroom"
 							],
 						"sections": [
 						  {
@@ -91,7 +91,7 @@
 						  {
 							"name": "150 rupees",
 							"access_rules": [
-								"",
+								""
 							],
 							"capture_item": true,
 							"item_count": 1
@@ -99,7 +99,7 @@
 						  {
 							"name": "Member's Shop 1",
 							"access_rules": [
-								"$member_shop",
+								"$member_shop"
 							],
 							"capture_item": true,
 							"item_count": 1
@@ -107,7 +107,7 @@
 						  {
 							"name": "Member's Shop 2",
 							"access_rules": [
-								"$member_shop",
+								"$member_shop"
 							],
 							"capture_item": true,
 							"item_count": 1
@@ -115,11 +115,11 @@
 						  {
 							"name": "Member's Shop 3",
 							"access_rules": [
-								"$member_shop",
+								"$member_shop"
 							],
 							"capture_item": true,
 							"item_count": 1
-						  },
+						  }
 						  
 						],
 						"map_locations": [
@@ -129,7 +129,7 @@
 							"y": 620
 						  }
 						]
-					},
+					}
 				]
 			},
 			{
@@ -160,7 +160,7 @@
 							"name": "Hero's cave\nsmall key",
 							"hosted_item": "d0sk",
 							"item_count": 0
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -179,7 +179,7 @@
 						  {
 							"name": "Kill the beast",
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -221,13 +221,13 @@
 							"polishedbell, $portal_village, $temple_to_hns, $destroy_bush, $portal_village",
 							"polishedbell, $portal_remains, $remains_to_temple, $destroy_bush, $temple_to_hns",
 							"polishedbell, $portal_remains, $remains_to_temple, $destroy_bush, $portal_mountain",
-							"polishedbell, $portal_remains, $remains_to_temple, $destroy_bush, $portal_village",
+							"polishedbell, $portal_remains, $remains_to_temple, $destroy_bush, $portal_village"
 						],
 						"sections": [
 						  {
 							"name": "Coast chest",
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -267,13 +267,13 @@
 							"polishedbell, $portal_village, $temple_to_hns, $destroy_bush, $portal_village",
 							"polishedbell, $portal_remains, $remains_to_temple, $destroy_bush, $temple_to_hns",
 							"polishedbell, $portal_remains, $remains_to_temple, $destroy_bush, $portal_mountain",
-							"polishedbell, $portal_remains, $remains_to_temple, $destroy_bush, $portal_village",	
+							"polishedbell, $portal_remains, $remains_to_temple, $destroy_bush, $portal_village"	
 						],
 						"sections": [
 						  {
 							"name": "Bed chest",
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -315,7 +315,7 @@
 							"polishedbell, $portal_village, $temple_to_hns, $destroy_bush, $portal_village, $coast_to_D7",
 							"polishedbell, $portal_remains, $remains_to_temple, $destroy_bush, $temple_to_hns, $coast_to_D7",
 							"polishedbell, $portal_remains, $remains_to_temple, $destroy_bush, $portal_mountain, $coast_to_D7",
-							"polishedbell, $portal_remains, $remains_to_temple, $destroy_bush, $portal_village, $coast_to_D7",
+							"polishedbell, $portal_remains, $remains_to_temple, $destroy_bush, $portal_village, $coast_to_D7"
 						],
 						"sections": [
 						  {
@@ -349,7 +349,7 @@
 								
 								// Accessing poe 1 is 1 key but the chest is behind 5 to avoid a key being there
 								// Therefore, show as accessible with only 1 key
-								"d7sk:1, $kill_normal",
+								"d7sk:1, $kill_normal"
 							],
 							"item_count": 1
 						  },
@@ -361,7 +361,7 @@
 								
 								"d7sk:1, bracelet, [$shoot_seeds], [emberseeds], $kill_poe, $max_jump:1",
 								"d7sk:1, bracelet, $shoot_seeds, mysteryseeds, $kill_poe, $max_jump:1, [emberseeds]",
-								"[d7sk:1], bracelet, satchel, pegasusseeds, [$kill_poe], $max_jump:1, [$shoot_seeds], [emberseeds]",
+								"[d7sk:1], bracelet, satchel, pegasusseeds, [$kill_poe], $max_jump:1, [$shoot_seeds], [emberseeds]"
 							],
 							"item_count": 1
 						  },
@@ -376,7 +376,7 @@
 								"d7sk:1, bracelet, $shoot_seeds, mysteryseeds, $kill_poe, $max_jump:2, [emberseeds]",
 								"d7sk:1, bracelet, $shoot_seeds, mysteryseeds, $kill_poe, magnet, [emberseeds]",
 								"[d7sk:1], bracelet, satchel, pegasusseeds, [$kill_poe], $max_jump:2, [$shoot_seeds], [emberseeds]",
-								"[d7sk:1], bracelet, satchel, pegasusseeds, [$kill_poe], magnet, [$shoot_seeds], [emberseeds]",
+								"[d7sk:1], bracelet, satchel, pegasusseeds, [$kill_poe], magnet, [$shoot_seeds], [emberseeds]"
 							],
 							"item_count": 1
 						  },
@@ -388,7 +388,7 @@
 								
 								"d7sk:1, bracelet, [$shoot_seeds], [emberseeds], $kill_poe, $max_jump:2, $kill_magunesu, magnet",
 								"d7sk:1, bracelet, $shoot_seeds, mysteryseeds, $kill_poe, $max_jump:2, $kill_magunesu, magnet, [emberseeds]",
-								"[d7sk:1], bracelet, satchel, pegasusseeds, [$kill_poe], $max_jump:2, $kill_magunesu, magnet, [$shoot_seeds], [emberseeds]",
+								"[d7sk:1], bracelet, satchel, pegasusseeds, [$kill_poe], $max_jump:2, $kill_magunesu, magnet, [$shoot_seeds], [emberseeds]"
 							],
 							"item_count": 1
 						  },
@@ -403,7 +403,7 @@
 								"d7sk:2, bracelet, $shoot_seeds, mysteryseeds, $kill_poe, $max_jump:1, [emberseeds]",
 								"d7sk:1, [d7sk:2], bracelet, $shoot_seeds, mysteryseeds, $kill_poe, $max_jump:1, [emberseeds]",
 								"d7sk:2, bracelet, satchel, pegasusseeds, [$kill_poe], $max_jump:1, [$shoot_seeds], [emberseeds]",
-								"d7sk:1, [d7sk:2], bracelet, satchel, pegasusseeds, [$kill_poe], $max_jump:1, [$shoot_seeds], [emberseeds]",
+								"d7sk:1, [d7sk:2], bracelet, satchel, pegasusseeds, [$kill_poe], $max_jump:1, [$shoot_seeds], [emberseeds]"
 							],
 							"item_count": 1
 						  },
@@ -425,7 +425,7 @@
 								"d7sk:3, bracelet, slingshot2, emberseeds, $kill_poe, flippers, $kill_darknut_across, $max_jump:1",
 								"d7sk:2, [d7sk:3], bracelet, slingshot2, emberseeds, $kill_poe, flippers, $kill_darknut_across, $max_jump:1",
 								"d7sk:3, bracelet, slingshot2, emberseeds, $kill_poe, flippers, $kill_stalfos_pit, magnet",
-								"d7sk:2, [d7sk:3], bracelet, slingshot2, emberseeds, $kill_poe, flippers, $kill_stalfos_pit, magnet",
+								"d7sk:2, [d7sk:3], bracelet, slingshot2, emberseeds, $kill_poe, flippers, $kill_stalfos_pit, magnet"
 							],
 							"item_count": 1
 						  },
@@ -439,7 +439,7 @@
 								"d7sk:3, [d7sk:4], bracelet, $shoot_seeds, emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, $max_jump:3",
 								
 								"d7sk:4, bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3",
-								"d7sk:3, [d7sk:4], bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3",
+								"d7sk:3, [d7sk:4], bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3"
 							],
 							"item_count": 1
 						  },
@@ -457,7 +457,7 @@
 								"d7sk:4, bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3, magnet",
 								"d7sk:3, [d7sk:4], bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3, magnet",
 								"d7sk:4, bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:4, [magnet]",
-								"d7sk:3, [d7sk:4], bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:4, [magnet]",
+								"d7sk:3, [d7sk:4], bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:4, [magnet]"
 							],
 							"item_count": 1
 						  },
@@ -471,7 +471,7 @@
 								"d7sk:4, [d7sk:5], bracelet, $shoot_seeds, emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, $max_jump:3",
 								
 								"d7sk:5, bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:4, [satchel], [pegasusseeds]",
-								"d7sk:4, [d7sk:5], bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:4, [satchel], [pegasusseeds]",
+								"d7sk:4, [d7sk:5], bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:4, [satchel], [pegasusseeds]"
 							],
 							"item_count": 1
 						  },
@@ -486,7 +486,7 @@
 								"d7bk, d7sk:3, [d7sk:4], bracelet, $kill_gleeok, $shoot_seeds, emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, $max_jump:3",
 								
 								"d7bk, d7sk:4, bracelet, $kill_gleeok, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3",
-								"d7bk, d7sk:3, [d7sk:4], bracelet, $kill_gleeok, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3",
+								"d7bk, d7sk:3, [d7sk:4], bracelet, $kill_gleeok, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3"
 							],
 							"item_count": 1
 						  },
@@ -500,7 +500,7 @@
 								"d7bk, d7sk:3, [d7sk:4], bracelet, $kill_gleeok, $shoot_seeds, emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, $max_jump:3",
 								
 								"d7bk, d7sk:4, bracelet, $kill_gleeok, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3",
-								"d7bk, d7sk:3, [d7sk:4], bracelet, $kill_gleeok, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3",
+								"d7bk, d7sk:3, [d7sk:4], bracelet, $kill_gleeok, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3"
 							],
 							"hosted_item": "d7",
 							"item_count": 0
@@ -514,7 +514,7 @@
 							"name": "D7 boss \nkey",
 							"hosted_item": "d7bk",
 							"item_count": 0
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -533,11 +533,11 @@
 						  {
 							"name": "Respawnable bushes",
 							"access_rules": [
-								"[emberseeds], $destroy_bush_respawn",
+								"[emberseeds], $destroy_bush_respawn"
 							],
 							"hosted_item": "emberseeds",
 							"item_count": 0
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -546,7 +546,7 @@
 							"y": 563
 						  }
 						]
-					},
+					}
 				]
 			},	
 			{
@@ -557,13 +557,13 @@
 						"access_rules": [
 							"$max_jump:3",
 							"north_fall, $max_jump:1",
-							"$north_stump, fall, $max_jump:1",
+							"$north_stump, fall, $max_jump:1"
 						],
 						"sections": [
 						  {
 							"name": "Pits chest",
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -591,10 +591,10 @@
 								"$d5_stump, $ricky, summer, flippers",
 								
 								"$enter_d5, bombs, north_summer, bracelet, $max_jump:1, flippers",
-								"$enter_d5, $ricky, north_summer, bracelet, $max_jump:1, flippers",
+								"$enter_d5, $ricky, north_summer, bracelet, $max_jump:1, flippers"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -608,13 +608,13 @@
 						"name": "Dry Eyeglass Lake",
 						"access_rules": [
 								"$d5_stump, $wet_lake, summer, bracelet",
-								"$d5_stump, $wet_lake, north_summer, $enter_d5, bracelet",
+								"$d5_stump, $wet_lake, north_summer, $enter_d5, bracelet"
 							],
 						"sections": [
 						  {
 							"name": "Rock cave",
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -639,7 +639,7 @@
 										"$kill_stalfos",
 										"bracelet",
 										"$kill_stalfos_hard, [$kill_stalfos]",
-										"$kill_stalfos_hard, [bracelet]",
+										"$kill_stalfos_hard, [bracelet]"
 									],
 								"item_count": 1
 							},
@@ -652,7 +652,7 @@
 										"d1sk:1, $kill_stalfos",
 										"d1sk:1, bracelet",
 										"d1sk:1, $kill_stalfos_hard, [$kill_stalfos]",
-										"d1sk:1, $kill_stalfos_hard, [bracelet]",
+										"d1sk:1, $kill_stalfos_hard, [bracelet]"
 		
 									],
 								"item_count": 1
@@ -671,7 +671,7 @@
 										"d1sk:1, $kill_stalfos, $use_seeds, mysteryseeds, [emberseeds]",
 										"d1sk:1, bracelet, $use_seeds, mysteryseeds, [emberseeds]",
 										"d1sk:1, $kill_stalfos_hard, [$kill_stalfos], $use_seeds, mysteryseeds, [emberseeds]",
-										"d1sk:1, $kill_stalfos_hard, [bracelet], $use_seeds, mysteryseeds, [emberseeds]",
+										"d1sk:1, $kill_stalfos_hard, [bracelet], $use_seeds, mysteryseeds, [emberseeds]"
 									],
 								"item_count": 1
 							},
@@ -683,7 +683,7 @@
 										
 										"d1sk:1, $kill_stalfos, $kill_normal",
 										"d1sk:1, $kill_stalfos_hard, [$kill_stalfos], $kill_hard, [$kill_normal]",
-										"d1sk:1, bracelet, [$kill_stalfos], [$kill_normal]",
+										"d1sk:1, bracelet, [$kill_stalfos], [$kill_normal]"
 									],
 								"item_count": 1
 							},
@@ -696,7 +696,7 @@
 										"d1sk:1, $kill_stalfos, $use_seeds, emberseeds",
 										"d1sk:1, bracelet, $use_seeds, emberseeds",
 										"d1sk:1, $kill_stalfos_hard, [$kill_stalfos]",
-										"d1sk:1, $kill_stalfos_hard, [bracelet]",
+										"d1sk:1, $kill_stalfos_hard, [bracelet]"
 									],
 								"item_count": 1
 							},
@@ -708,7 +708,7 @@
 										
 										"d1sk:1, $kill_stalfos, $hit_lever",
 										"d1sk:1, $kill_stalfos_hard, $hit_lever, [$kill_stalfos]",
-										"d1sk:1, bracelet, [$kill_stalfos]",
+										"d1sk:1, bracelet, [$kill_stalfos]"
 									],
 								"item_count": 1
 							},
@@ -720,7 +720,7 @@
 										
 										"d1sk:1, $kill_stalfos, $hit_lever",
 										"d1sk:1, $kill_stalfos_hard, $hit_lever, [$kill_stalfos]",
-										"d1sk:1, bracelet, [$kill_stalfos]",
+										"d1sk:1, bracelet, [$kill_stalfos]"
 									],
 								"item_count": 1
 							},
@@ -742,7 +742,7 @@
 										"$d1clear",
 										
 										"$use_seeds, emberseeds",
-										"$use_seeds, mysteryseeds, [emberseeds]",
+										"$use_seeds, mysteryseeds, [emberseeds]"
 									],
 								"item_count": 1
 							},
@@ -783,7 +783,7 @@
 								"name": "D1 boss \nkey",
 								"hosted_item": "d1bk",
 								"item_count": 0
-							},	
+							}	
 						],
 						"map_locations": [
 						  {
@@ -807,7 +807,7 @@
 									
 									"$hit_lever, $max_jump:2",
 									"$hit_lever, $max_jump:1, bombs, [$max_jump:2]",
-									"$hit_lever, flippers",
+									"$hit_lever, flippers"
 								],
 							"item_count": 1
 						  },
@@ -824,7 +824,7 @@
 									"$kill_normal, $kill_gibdo, flippers, satchel, pegasusseeds, [$max_jump:1]",
 									
 									// west wing way
-									"$kill_normal, $kill_gibdo, magnet, bombs, $max_jump:1",
+									"$kill_normal, $kill_gibdo, magnet, bombs, $max_jump:1"
 								],
 							"item_count": 1
 						  },
@@ -848,7 +848,7 @@
 									"d5sk:5, magnet, bombs, $max_jump:3, [$max_jump:4]",
 									"d5sk:1, [d5sk:5], magnet, bombs, $max_jump:3, [$max_jump:4]",
 									"d5sk:5, magnet, bombs, $max_jump:1, flippers",
-									"d5sk:1, [d5sk:5], magnet, bombs, $max_jump:1, flippers",
+									"d5sk:1, [d5sk:5], magnet, bombs, $max_jump:1, flippers"
 								],
 							"item_count": 1
 						  },
@@ -859,7 +859,7 @@
 									"$d5clear",
 									
 									"$max_jump:3",
-									"magnet",
+									"magnet"
 								],
 							"item_count": 1
 						  },
@@ -869,7 +869,7 @@
 									// Can get every single chest in D5
 									"$d5clear",
 									
-									"$kill_moldorm, $kill_ironmask",
+									"$kill_moldorm, $kill_ironmask"
 								],
 							"item_count": 1
 						  },
@@ -882,7 +882,7 @@
 									"magnet",
 									"$max_jump:2, bombs",
 									"$max_jump:1, bombs, [$max_jump:2]",
-									"flippers, $max_jump:1, bombs",
+									"flippers, $max_jump:1, bombs"
 								],
 							"item_count": 1
 						  },
@@ -895,7 +895,7 @@
 									"magnet, $kill_moldorm, $kill_ironmask",
 									"$max_jump:2, bombs, $kill_moldorm, $kill_ironmask",
 									"$max_jump:1, bombs, [$max_jump:2], $kill_moldorm, $kill_ironmask",
-									"flippers, $max_jump:1, bombs, $kill_moldorm, $kill_ironmask",
+									"flippers, $max_jump:1, bombs, $kill_moldorm, $kill_ironmask"
 								],
 							"item_count": 1
 						  },
@@ -908,7 +908,7 @@
 									"$max_jump:4",
 									"$max_jump:2, magnet",
 									"$max_jump:1, bombs, [$max_jump:2], magnet",
-									"flippers, magnet",
+									"flippers, magnet"
 								],
 							"item_count": 1
 						  },
@@ -921,7 +921,7 @@
 									"$max_jump:3",
 									"$max_jump:2, magnet",
 									"$max_jump:1, bombs, [$max_jump:2], magnet",
-									"flippers, magnet",
+									"flippers, magnet"
 								],
 							"item_count": 1
 						  },
@@ -934,7 +934,7 @@
 									"d5sk:5, $hit_lever, $max_jump:2, magnet, $kill_syger, $kill_darknut, $kill_magunesu",
 									"d5sk:3, [d5sk:5], $hit_lever, $max_jump:2, magnet, $kill_syger, $kill_darknut, $kill_magunesu",
 									"d5sk:5, $hit_lever, flippers, magnet, $kill_syger, $kill_darknut, $kill_magunesu",
-									"d5sk:3, [d5sk:5], $hit_lever, flippers, magnet, $kill_syger, $kill_darknut, $kill_magunesu",
+									"d5sk:3, [d5sk:5], $hit_lever, flippers, magnet, $kill_syger, $kill_darknut, $kill_magunesu"
 								],
 							"item_count": 1
 						  },
@@ -948,7 +948,7 @@
 									"d5bk, d5sk:5, $max_jump:2, magnet, $kill_syger",
 									"d5bk, d5sk:2, [d5sk:5], $max_jump:2, magnet, $kill_syger",
 									"d5bk, d5sk:5, $max_jump:1, flippers, magnet, $kill_syger",
-									"d5bk, d5sk:2, [d5sk:5], $max_jump:1, flippers, magnet, $kill_syger",
+									"d5bk, d5sk:2, [d5sk:5], $max_jump:1, flippers, magnet, $kill_syger"
 								],
 							"item_count": 1
 						  },
@@ -961,7 +961,7 @@
 									"d5bk, d5sk:5, $max_jump:2, magnet, $kill_syger",
 									"d5bk, d5sk:2, [d5sk:5], $max_jump:2, magnet, $kill_syger",
 									"d5bk, d5sk:5, $max_jump:1, flippers, magnet, $kill_syger",
-									"d5bk, d5sk:2, [d5sk:5], $max_jump:1, flippers, magnet, $kill_syger",
+									"d5bk, d5sk:2, [d5sk:5], $max_jump:1, flippers, magnet, $kill_syger"
 								],
 							"hosted_item": "d5",
 							"item_count": 0
@@ -975,7 +975,7 @@
 							"name": "D5 boss \nkey",
 							"hosted_item": "d5bk",
 							"item_count": 0
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -997,11 +997,11 @@
 								"[emberseeds], magnet, $kill_ironmask, $kill_moldorm, $kill_armos",
 								"[emberseeds], $max_jump:2, bombs",
 								"[emberseeds], $max_jump:1, bombs, [$max_jump:2]",
-								"[emberseeds], flippers, $max_jump:1, bombs",
+								"[emberseeds], flippers, $max_jump:1, bombs"
 							],
 							"hosted_item": "emberseeds",
 							"item_count": 0
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -1010,7 +1010,7 @@
 							"y": 350
 						  }
 						]
-					},
+					}
 				]
 			},
 			{
@@ -1028,7 +1028,7 @@
 					"$portal_swamp, $temple_to_beach, $destroy_bush",
 					"$portal_mountain, $temple_to_hns, $destroy_bush",
 					"$portal_village, $temple_to_hns, $destroy_bush",
-					"$portal_remains, $remains_to_temple, $destroy_bush",
+					"$portal_remains, $remains_to_temple, $destroy_bush"
 
 					//"$fairy_fountain_natzu, satchel, galeseeds",
 					
@@ -1050,7 +1050,7 @@
 								"suburbs_spring, bracelet, $max_jump:3",
 								"suburbs_spring, bracelet, $max_jump:2, [$max_jump:3]",
 								"suburbs_spring, bracelet, $max_jump:1, bombs, [$max_jump:3]",
-								"suburbs_spring, bracelet, magnet",
+								"suburbs_spring, bracelet, magnet"
 							],
 							"item_count": 1
 						  }
@@ -1071,7 +1071,7 @@
 							
 							"$sunken_city, $natzu_to_suburbs, $fountain_to_D2",
 							"$scent_tree_hard, $natzu_to_moblin_hard, $moblin_keep_to_sunken, $natzu_to_suburbs, $fountain_to_D2",
-							"$mount_cucco, flippers, $cucco_to_sunken, $natzu_to_suburbs, $fountain_to_D2",
+							"$mount_cucco, flippers, $cucco_to_sunken, $natzu_to_suburbs, $fountain_to_D2"
 						],
 						"sections": [
 						  {
@@ -1083,7 +1083,7 @@
 							],
 							"item_count": 0,
 							"hosted_item": "tree_wow"
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -1100,7 +1100,7 @@
 							
 							"$sunken_city, $natzu_to_suburbs, $fountain_to_D2",
 							"$scent_tree_hard, $natzu_to_moblin_hard, $moblin_keep_to_sunken, $natzu_to_suburbs, $fountain_to_D2",
-							"$mount_cucco, flippers, $cucco_to_sunken, $natzu_to_suburbs, $fountain_to_D2",
+							"$mount_cucco, flippers, $cucco_to_sunken, $natzu_to_suburbs, $fountain_to_D2"
 						],
 						"sections": [
 						  {
@@ -1108,7 +1108,7 @@
 							"access_rules": [
 								"$d2_B",
 								"$d2_A, $use_seeds, emberseeds, $kill_normal, bracelet",
-								"$d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_normal, bracelet",
+								"$d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_normal, bracelet"
 							],
 							"item_count": 1
 						  },
@@ -1118,7 +1118,7 @@
 								"$d2_mushrooms"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -1132,7 +1132,7 @@
 					{
 						"name": "Snake's Remains",
 						"access_rules": [
-							"$suburbs_to_fountain, $fountain_to_D2, $enter_d2",
+							"$suburbs_to_fountain, $fountain_to_D2, $enter_d2"
 							//"$scent_tree, $cross_natzu, $natzu_to_suburbs, $fountain_to_D2, $enter_d2",
 							//"$scent_tree, $natzu_to_moblin, $moblin_keep_to_sunken, $natzu_to_suburbs, $fountain_to_D2, $enter_d2",
 						],
@@ -1148,7 +1148,7 @@
 								"$d2clear",
 								
 								"$d2_A, $kill_normal",
-								"$d2_B, $kill_normal, bracelet",
+								"$d2_B, $kill_normal, bracelet"
 							],
 							"item_count": 1
 						  },
@@ -1160,7 +1160,7 @@
 								
 								"$d2_A, $kill_normal, $use_seeds, emberseeds",
 								"$d2_A, $kill_normal, $use_seeds, mysteryseeds, [emberseeds]",
-								"$d2_B, $kill_normal, bracelet",
+								"$d2_B, $kill_normal, bracelet"
 							],
 							"item_count": 1
 						  },
@@ -1175,7 +1175,7 @@
 								"d2sk:3, $d2_A, $kill_normal, $use_seeds, mysteryseeds, [emberseeds], $destroy_pot",
 								"d2sk:1, [d2sk:3], $d2_A, $kill_normal, $use_seeds, mysteryseeds, [emberseeds], $destroy_pot",
 								"d2sk:3, $d2_B, bracelet, $destroy_pot",
-								"d2sk:1, [d2sk:3], $d2_B, bracelet, $destroy_pot",
+								"d2sk:1, [d2sk:3], $d2_B, bracelet, $destroy_pot"
 							],
 							"item_count": 1
 						  },
@@ -1194,7 +1194,7 @@
 								"d2sk:3, $d2_A, $kill_rope, $use_seeds, mysteryseeds, [emberseeds], bracelet, [$kill_hardhat_pit], [$kill_moblin_pit]",
 								"d2sk:1, [d2sk:3], $d2_A, $kill_rope, $use_seeds, mysteryseeds, [emberseeds], bracelet, [$kill_hardhat_pit], [$kill_moblin_pit]",
 								"d2sk:3, $d2_B, bracelet, $destroy_pot, [$kill_hardhat_pit], [$kill_moblin_pit]",
-								"d2sk:1, [d2sk:3], $d2_B, bracelet, $destroy_pot, [$kill_hardhat_pit], [$kill_moblin_pit]",
+								"d2sk:1, [d2sk:3], $d2_B, bracelet, $destroy_pot, [$kill_hardhat_pit], [$kill_moblin_pit]"
 							],
 							"item_count": 1
 						  },
@@ -1206,7 +1206,7 @@
 								
 								"$d2_A, $use_seeds, emberseeds, $kill_normal",
 								"$d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_normal",
-								"$d2_B, bracelet",
+								"$d2_B, bracelet"
 							],
 							"item_count": 1
 						  },
@@ -1218,7 +1218,7 @@
 								
 								"$d2_A, $use_seeds, emberseeds, $kill_normal, bracelet, bombs",
 								"$d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_normal, bracelet, bombs",
-								"$d2_B, bracelet, bombs",
+								"$d2_B, bracelet, bombs"
 							],
 							"item_count": 1
 						  },
@@ -1230,7 +1230,7 @@
 								
 								"$d2_A, $use_seeds, emberseeds, $kill_normal, bracelet, bombs",
 								"$d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_normal, bracelet, bombs",
-								"$d2_B, bracelet, bombs",
+								"$d2_B, bracelet, bombs"
 							],
 							"item_count": 1
 						  },
@@ -1242,7 +1242,7 @@
 								
 								"d2sk:2, $d2_A, $use_seeds, emberseeds, $kill_normal, bracelet, bombs",
 								"d2sk:2, $d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_normal, bracelet, bombs",
-								"d2sk:2, $d2_B, bracelet, bombs",
+								"d2sk:2, $d2_B, bracelet, bombs"
 							],
 							"item_count": 1
 						  },
@@ -1258,7 +1258,7 @@
 								"d2bk, d2sk:2, $d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_normal, bracelet, bombs",
 								"d2bk, d2sk:1, [d2sk:2], $d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_normal, bracelet, bombs",
 								"d2bk, d2sk:2, $d2_B, bracelet, bombs",
-								"d2bk, d2sk:1, [d2sk:2], $d2_B, bracelet, bombs",
+								"d2bk, d2sk:1, [d2sk:2], $d2_B, bracelet, bombs"
 							],
 							"item_count": 1
 						  },
@@ -1273,7 +1273,7 @@
 								"d2bk, d2sk:2, $d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_normal, bracelet, bombs",
 								"d2bk, d2sk:1, [d2sk:2], $d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_normal, bracelet, bombs",
 								"d2bk, d2sk:2, $d2_B, bracelet, bombs",
-								"d2bk, d2sk:1, [d2sk:2], $d2_B, bracelet, bombs",
+								"d2bk, d2sk:1, [d2sk:2], $d2_B, bracelet, bombs"
 							],
 							"hosted_item": "d2",
 							"item_count": 0
@@ -1287,7 +1287,7 @@
 							"name": "D2 boss \nkey",
 							"hosted_item": "d2bk",
 							"item_count": 0
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -1300,7 +1300,7 @@
 					{
 						"name": "Get bombs in \nD2's Moblin room",
 						"access_rules": [
-								"$suburbs_to_fountain, $fountain_to_D2, $enter_d2",
+								"$suburbs_to_fountain, $fountain_to_D2, $enter_d2"
 							],
 						"sections": [
 						  {
@@ -1308,11 +1308,11 @@
 							"access_rules": [
 								"[bombs], $destroy_bush_respawn, $d2_A, $kill_rope, $use_seeds, emberseeds, $kill_hardhat_pit",
 								"[bombs], $destroy_bush_respawn, $d2_A, $kill_rope, $use_seeds, mysteryseeds, [emberseeds], $kill_hardhat_pit",
-								"[bombs], $destroy_bush_respawn, $d2_B, bracelet, $destroy_pot, $kill_hardhat_pit",
+								"[bombs], $destroy_bush_respawn, $d2_B, bracelet, $destroy_pot, $kill_hardhat_pit"
 							],
 							"hosted_item": "bombs",
 							"item_count": 0
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -1321,7 +1321,7 @@
 							"y": 350
 						  }
 						]
-					},
+					}
 				]
 			},
 			{
@@ -1338,7 +1338,7 @@
 						"$portal_village, $temple_to_hns, $destroy_bush, $suburbs_to_fountain, $fountain_to_WoW",
 						"$portal_remains, $remains_to_temple, $destroy_bush, $suburbs_to_fountain, $fountain_to_WoW",
 						
-						"$sunken_city, $sunken_to_wow, flippers",
+						"$sunken_city, $sunken_to_wow, flippers"
 					],
 				"children": [
 					{
@@ -1358,10 +1358,10 @@
 								"$ricky, $destroy_bush, wow_fall",
 								"$ricky, $destroy_bush, spring",
 								"$ricky, $destroy_bush, summer",
-								"$ricky, $destroy_bush, fall",
+								"$ricky, $destroy_bush, fall"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -1380,10 +1380,10 @@
 								"$max_jump:3",
 								"$max_jump:2, bombs, [$max_jump:3]",
 								"flippers",
-								"$sunken_city, $sunken_to_wow, flippers",
+								"$sunken_city, $sunken_to_wow, flippers"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -1400,10 +1400,10 @@
 							"name": "Be Santa Claus",
 							"access_rules": [
 								"wow_winter", 
-								"winter",
+								"winter"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -1412,7 +1412,7 @@
 							"y": 322
 						  }
 						]
-					},
+					}
 				]
 			},
 			{
@@ -1433,7 +1433,7 @@
 							],
 							"item_count": 0,
 							"hosted_item": "tree_plain"
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -1449,7 +1449,7 @@
 						  {
 							"name": "(ง •̀_•́)ง",
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -1469,10 +1469,10 @@
 								"flippers, $dimitri, plain_fall",
 								
 								"flippers, $destroy_mushroom, $plain_stump, fall",
-								"flippers, $dimitri, $plain_stump, fall",
+								"flippers, $dimitri, $plain_stump, fall"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -1489,10 +1489,10 @@
 							"name": "Free item",
 							"access_rules": [
 								"flippers",
-								"$dimitri",
+								"$dimitri"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -1508,10 +1508,10 @@
 						  {
 							"name": "Water chest",
 							"access_rules": [
-								"flippers",
+								"flippers"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -1520,7 +1520,7 @@
 							"y": 492
 						  }
 						]
-					},
+					}
 				]
 			},
 			{
@@ -1541,7 +1541,7 @@
 							],
 							"item_count": 0,
 							"hosted_item": "tree_swamp"
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -1557,10 +1557,10 @@
 						  {
 							"name": "Flooded item",
 							"access_rules": [
-								"$pegasus_tree, $hit_lever",
+								"$pegasus_tree, $hit_lever"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -1584,7 +1584,7 @@
 								
 								"$kill_beetle, bracelet",
 								"bracelet, shovel",
-								"bracelet, shield1",
+								"bracelet, shield1"
 							],
 							"item_count": 1
 						  },
@@ -1596,7 +1596,7 @@
 								
 								"$kill_beetle, $kill_moldorm",
 								"bracelet, shovel, $kill_moldorm",
-								"bracelet, shield1, $kill_moldorm",
+								"bracelet, shield1, $kill_moldorm"
 							],
 							"item_count": 1
 						  },
@@ -1608,7 +1608,7 @@
 								
 								"$kill_beetle, bombs",
 								"bracelet, shovel, bombs",
-								"bracelet, shield1, bombs",
+								"bracelet, shield1, bombs"
 							],
 							"item_count": 1
 						  },
@@ -1625,7 +1625,7 @@
 								"d3sk:2, shield1, bracelet, [$max_jump:1], $kill_mimic",
 								"d3sk:1, [d3sk:2], shield1, bracelet, [$max_jump:1], $kill_mimic",
 								"d3sk:2, $kill_beetle, [bracelet], $max_jump:1, $kill_mimic",
-								"d3sk:1, [d3sk:2], $kill_beetle, [bracelet], $max_jump:1, $kill_mimic",
+								"d3sk:1, [d3sk:2], $kill_beetle, [bracelet], $max_jump:1, $kill_mimic"
 							],
 							"item_count": 1
 						  },
@@ -1638,7 +1638,7 @@
 								"$kill_beetle, bracelet",
 								"shovel, bracelet",
 								"shield1, bracelet",
-								"$kill_beetle, $max_jump:1",
+								"$kill_beetle, $max_jump:1"
 							],
 							"item_count": 1
 						  },
@@ -1650,7 +1650,7 @@
 								
 								"$kill_beetle, $max_jump:1",
 								"bracelet, shovel, $max_jump:1",
-								"bracelet, shield1, $max_jump:1",
+								"bracelet, shield1, $max_jump:1"
 							],
 							"item_count": 1
 						  },
@@ -1662,7 +1662,7 @@
 								
 								"$kill_beetle, $max_jump:1",
 								"bracelet, shovel, $max_jump:1",
-								"bracelet, shield1, $max_jump:1",
+								"bracelet, shield1, $max_jump:1"
 							],
 							"item_count": 1
 						  },
@@ -1674,7 +1674,7 @@
 								
 								"$kill_beetle, $max_jump:1",
 								"bracelet, shovel, $max_jump:1",
-								"bracelet, shield1, $max_jump:1",
+								"bracelet, shield1, $max_jump:1"
 							],
 							"item_count": 1
 						  },
@@ -1689,7 +1689,7 @@
 								"d3sk:2, shovel, $kill_omuai, $max_jump:1",
 								"d3sk:1, [d3sk:2], shovel, $kill_omuai, $max_jump:1",
 								"d3sk:2, shield1, $kill_omuai, $max_jump:1",
-								"d3sk:1, [d3sk:2], shield1, $kill_omuai, $max_jump:1",
+								"d3sk:1, [d3sk:2], shield1, $kill_omuai, $max_jump:1"
 							],
 							"item_count": 1
 						  },
@@ -1705,7 +1705,7 @@
 								"d3bk, d3sk:2, shovel, $kill_omuai, $max_jump:1, $kill_mothula",
 								"d3bk, d3sk:1, [d3sk:2], shovel, $kill_omuai, $max_jump:1, $kill_mothula",
 								"d3bk, d3sk:2, shield1, $kill_omuai, $max_jump:1, $kill_mothula",
-								"d3bk, d3sk:1, [d3sk:2], shield1, $kill_omuai, $max_jump:1, $kill_mothula",
+								"d3bk, d3sk:1, [d3sk:2], shield1, $kill_omuai, $max_jump:1, $kill_mothula"
 							],
 							"item_count": 1
 						  },
@@ -1720,7 +1720,7 @@
 								"d3bk, d3sk:2, shovel, $kill_omuai, $max_jump:1, $kill_mothula",
 								"d3bk, d3sk:1, [d3sk:2], shovel, $kill_omuai, $max_jump:1, $kill_mothula",
 								"d3bk, d3sk:2, shield1, $kill_omuai, $max_jump:1, $kill_mothula",
-								"d3bk, d3sk:1, [d3sk:2], shield1, $kill_omuai, $max_jump:1, $kill_mothula",
+								"d3bk, d3sk:1, [d3sk:2], shield1, $kill_omuai, $max_jump:1, $kill_mothula"
 							],
 							"hosted_item": "d3",
 							"item_count": 0
@@ -1734,7 +1734,7 @@
 							"name": "D3 boss \nkey",
 							"hosted_item": "d3bk",
 							"item_count": 0
-						  },
+						  }
 						  
 						],
 						"map_locations": [
@@ -1757,10 +1757,10 @@
 								
 								"$south_swamp, $swamp_stump, winter, shovel, bombs",
 								"$south_swamp, $swamp_stump, winter, $any_flute, bombs",
-								"$south_swamp, $swamp_stump, winter, $ricky",
+								"$south_swamp, $swamp_stump, winter, $ricky"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -1769,7 +1769,7 @@
 							"y": 534
 						  }
 						]
-					},
+					}
 				]
 			},
 			{
@@ -1783,10 +1783,10 @@
 							"access_rules": [
 								"$scent_tree, flippers",
 								"$scent_tree, $dimitri",
-								"$sunken_city, natzu_dimitri, $max_jump:4",
+								"$sunken_city, natzu_dimitri, $max_jump:4"
 							],
 							"item_count": 1
-						  },
+						  }
 						  
 						],
 						"map_locations": [
@@ -1806,10 +1806,10 @@
 								"$scent_tree, $natzu_to_moblin, bracelet",
 								
 								"$sunken_city, $sunken_to_moblin, bracelet",
-								"$mount_cucco, flippers, $cucco_to_sunken, $sunken_to_moblin, bracelet",
+								"$mount_cucco, flippers, $cucco_to_sunken, $sunken_to_moblin, bracelet"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -1818,7 +1818,7 @@
 							"y": 237
 						  }
 						]
-					},
+					}
 				]
 			},	
 			{
@@ -1830,7 +1830,7 @@
 					"$scent_tree, $cross_natzu, sunken_winter",
 					"$scent_tree, $natzu_to_moblin, $moblin_keep_to_sunken, $cross_water",
 					"$scent_tree, $natzu_to_moblin, $moblin_keep_to_sunken, sunken_winter",
-					"$mount_cucco, flippers, $cucco_to_sunken",
+					"$mount_cucco, flippers, $cucco_to_sunken"
 				],
 				"children": [
 					{
@@ -1845,7 +1845,7 @@
 							],
 							"item_count": 0,
 							"hosted_item": "tree_sunken"
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -1865,7 +1865,7 @@
 							"name": "Master Diver's \nchallenge",
 							"access_rules": [
 								"sword1, $max_jump:1",
-								"sword1, flippers",
+								"sword1, flippers"
 							],
 							"item_count": 1
 						  },
@@ -1888,7 +1888,7 @@
 								"$dimitri"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -1905,10 +1905,10 @@
 							"name": "Summer cave",
 							"access_rules": [
 								"$destroy_bush, flippers, sunken_summer",
-								"$destroy_bush, flippers, summer",
+								"$destroy_bush, flippers, summer"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -1917,7 +1917,7 @@
 							"y": 195
 						  }
 						]
-					},
+					}
 				]
 			},
 			{
@@ -1957,12 +1957,12 @@
 								"spring, bracelet, $max_jump:1, sword1",
 								"spring, bracelet, $max_jump:1, foolsore, $destroy_flower",
 								"sunken_spring, bracelet, $max_jump:1, sword1",								
-								"sunken_spring, bracelet, $max_jump:1, foolsore, $destroy_flower",								
+								"sunken_spring, bracelet, $max_jump:1, foolsore, $destroy_flower"								
 								
 							],
 							"capture_item": true,
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -1984,10 +1984,10 @@
 								
 								"sunken_spring, bracelet, $destroy_flower",								
 								"[sunken_spring], bracelet, [$destroy_flower], satchel, galeseeds",								
-								"[sunken_spring], bracelet, [$destroy_flower], treewarp",								
+								"[sunken_spring], bracelet, [$destroy_flower], treewarp"								
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -2003,10 +2003,10 @@
 						  {
 							"name": "Chest past blocks",
 							"access_rules": [
-								"$talon_cave",	
+								"$talon_cave"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -2019,7 +2019,7 @@
 					{
 						"name": "Dancing Dragon Dungeon",
 						"access_rules": [
-								"$enter_d4",
+								"$enter_d4"
 							],
 						"sections": [
 						  {
@@ -2029,7 +2029,7 @@
 								"$d4clear",
 								
 								"flippers",
-								"$max_jump:4",
+								"$max_jump:4"
 							],
 							"item_count": 1
 						  },
@@ -2040,7 +2040,7 @@
 								"$d4clear",
 								
 								"flippers, bombs, bracelet",
-								"$max_jump:4, bombs, bracelet",
+								"$max_jump:4, bombs, bracelet"
 							],
 							"item_count": 1
 						  },
@@ -2051,7 +2051,7 @@
 								"$d4clear",
 								
 								"flippers, $hit_lever",
-								"$max_jump:4, $hit_lever",
+								"$max_jump:4, $hit_lever"
 							],
 							"item_count": 1
 						  },
@@ -2062,7 +2062,7 @@
 								"$d4clear",
 								
 								"flippers, $hit_lever, $max_jump:1",
-								"$max_jump:4, $hit_lever",
+								"$max_jump:4, $hit_lever"
 							],
 							"item_count": 1
 						  },
@@ -2073,7 +2073,7 @@
 								"$d4clear",
 								
 								"d4sk:1, flippers, $max_jump:1, bombs",
-								"d4sk:1, $max_jump:4, bombs",
+								"d4sk:1, $max_jump:4, bombs"
 							],
 							"item_count": 1
 						  },
@@ -2084,7 +2084,7 @@
 								"$d4clear",
 								
 								"d4sk:1, flippers, $max_jump:1, $hit_lever, $kill_normal",
-								"d4sk:1, flippers, $max_jump:1, $hit_lever, bracelet",
+								"d4sk:1, flippers, $max_jump:1, $hit_lever, bracelet"
 							],
 							"item_count": 1
 						  },
@@ -2095,7 +2095,7 @@
 								"$d4clear",
 								
 								"d4sk:2, flippers, $max_jump:1, $hit_lever, $kill_shroudedstalfos",
-								"d4sk:2, flippers, $max_jump:1, $hit_lever, bracelet",
+								"d4sk:2, flippers, $max_jump:1, $hit_lever, bracelet"
 							],
 							"item_count": 1
 						  },
@@ -2108,7 +2108,7 @@
 								"d4sk:2, flippers, $max_jump:1, $kill_shroudedstalfos, $shoot_seeds, emberseeds",
 								"d4sk:2, flippers, $max_jump:1, $kill_shroudedstalfos, $shoot_seeds, mysteryseeds, [emberseeds]",
 								"d4sk:2, flippers, $max_jump:1, bracelet, $shoot_seeds, emberseeds",
-								"d4sk:2, flippers, $max_jump:1, bracelet, $shoot_seeds, mysteryseeds, [emberseeds]",
+								"d4sk:2, flippers, $max_jump:1, bracelet, $shoot_seeds, mysteryseeds, [emberseeds]"
 							],
 							"item_count": 1
 						  },
@@ -2121,7 +2121,7 @@
 								"d4sk:5, flippers, $max_jump:1, $kill_shroudedstalfos, $kill_agunima",
 								"d4sk:3, [d4sk:5], flippers, $max_jump:1, $kill_shroudedstalfos, $kill_agunima",
 								"d4sk:5, flippers, $max_jump:1, bracelet, $kill_agunima",
-								"d4sk:3, [d4sk:5], flippers, $max_jump:1, bracelet, $kill_agunima",
+								"d4sk:3, [d4sk:5], flippers, $max_jump:1, bracelet, $kill_agunima"
 							],
 							"item_count": 1
 						  },
@@ -2134,7 +2134,7 @@
 								"d4sk:5, flippers, $max_jump:1, $kill_shroudedstalfos, $kill_agunima, $hit_far_lever",
 								"d4sk:3, [d4sk:5], flippers, $max_jump:1, $kill_shroudedstalfos, $kill_agunima, $hit_far_lever",
 								"d4sk:5, flippers, $max_jump:1, bracelet, $kill_agunima, $hit_far_lever",
-								"d4sk:3, [d4sk:5], flippers, $max_jump:1, bracelet, $kill_agunima, $hit_far_lever",
+								"d4sk:3, [d4sk:5], flippers, $max_jump:1, bracelet, $kill_agunima, $hit_far_lever"
 							],
 							"item_count": 1
 						  },
@@ -2156,7 +2156,7 @@
 								"d4bk, d4sk:5, flippers, $max_jump:2, bombs, $hit_lever, $kill_shroudedstalfos, $kill_normal, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $kill_gohma",
 								"d4bk, d4sk:3, [d4sk:5], flippers, $max_jump:2, bombs, $hit_lever, $kill_shroudedstalfos, $kill_normal, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $kill_gohma",
 								"d4bk, d4sk:5, flippers, $max_jump:2, bombs, $hit_lever, bracelet, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $kill_gohma",
-								"d4bk, d4sk:3, [d4sk:5], flippers, $max_jump:2, bombs, $hit_lever, bracelet, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $kill_gohma",
+								"d4bk, d4sk:3, [d4sk:5], flippers, $max_jump:2, bombs, $hit_lever, bracelet, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $kill_gohma"
 							],
 							"item_count": 1
 						  },
@@ -2177,7 +2177,7 @@
 								"d4bk, d4sk:5, flippers, $max_jump:2, bombs, $hit_lever, $kill_shroudedstalfos, $kill_normal, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $max_jump:2, $kill_gohma",
 								"d4bk, d4sk:3, [d4sk:5], flippers, $max_jump:2, bombs, $hit_lever, $kill_shroudedstalfos, $kill_normal, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $max_jump:2, $kill_gohma",
 								"d4bk, d4sk:5, flippers, $max_jump:2, bombs, $hit_lever, bracelet, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $max_jump:2, $kill_gohma",
-								"d4bk, d4sk:3, [d4sk:5], flippers, $max_jump:2, bombs, $hit_lever, bracelet, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $max_jump:2, $kill_gohma",
+								"d4bk, d4sk:3, [d4sk:5], flippers, $max_jump:2, bombs, $hit_lever, bracelet, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $max_jump:2, $kill_gohma"
 							],
 							"hosted_item": "d4",
 							"item_count": 0
@@ -2191,7 +2191,7 @@
 							"name": "D4 boss \nkey",
 							"hosted_item": "d4bk",
 							"item_count": 0
-						  },
+						  }
 						  
 						],
 						"map_locations": [
@@ -2208,10 +2208,10 @@
 						  {
 							"name": "Underwater item",
 							"access_rules": [
-								"$talon_cave, flippers",
+								"$talon_cave, flippers"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -2220,7 +2220,7 @@
 							"y": 50
 						  }
 						]
-					},
+					}
 				]
 			},
 			{
@@ -2234,11 +2234,11 @@
 							"access_rules": [
 								"{$mount_cucco}",
 								"$mount_cucco, banana",
-								"$mount_cucco, $max_jump:4",
+								"$mount_cucco, $max_jump:4"
 							],
 							"capture_item": true,
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -2255,10 +2255,10 @@
 							"name": "Lava room chest",
 							"access_rules": [
 								"$goron_mountain, bombs, $max_jump:3",
-								"$goron_mountain, bombs, $max_jump:2, [$max_jump:3]",
+								"$goron_mountain, bombs, $max_jump:2, [$max_jump:3]"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -2267,7 +2267,7 @@
 							"y": 88
 						  }
 						]
-					},
+					}
 				]
 			},
 			{
@@ -2285,7 +2285,7 @@
 								"$destroy_mushroom, winter, spring, summer, fall"
 							],
 							"item_count": 1
-						  },
+						  }
 						  
 						],
 						"map_locations": [
@@ -2306,11 +2306,11 @@
 							"name": "Seeds",
 							"access_rules": [
 								//"{}",
-								"$harvest_seeds",
+								"$harvest_seeds"
 							],
 							"item_count": 0,
 							"hosted_item": "tree_tarm"
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -2326,10 +2326,10 @@
 						  {
 							"name": "Chest down the stairs",
 							"access_rules": [
-								"$tarm_tree, $use_seeds, emberseeds",
+								"$tarm_tree, $use_seeds, emberseeds"
 								],
 							"item_count": 1
-						  },
+						  }
 						  
 						],
 						"map_locations": [
@@ -2343,7 +2343,7 @@
 					{
 						"name": "Ancient Ruins",
 						"access_rules": [
-								"$enter_d6",
+								"$enter_d6"
 							],
 						"sections": [
 						  {
@@ -2357,7 +2357,7 @@
 								"$d6clear",
 								
 								"$max_jump:3",
-								"$max_jump:1, magnet",
+								"$max_jump:1, magnet"
 								],
 							"item_count": 1
 						  },
@@ -2390,7 +2390,7 @@
 								"$d6clear",
 								
 								"d6sk:3, bombs",
-								"d6sk:1, [d6sk:3], bombs",
+								"d6sk:1, [d6sk:3], bombs"
 							],
 							"item_count": 1
 						  },
@@ -2401,7 +2401,7 @@
 								"$d6clear",
 								
 								"d6sk:3, bombs, $max_jump:1",
-								"d6sk:1, [d6sk:3], bombs, $max_jump:1",
+								"d6sk:1, [d6sk:3], bombs, $max_jump:1"
 							],
 							"item_count": 1
 						  },
@@ -2417,7 +2417,7 @@
 								
 								// 2 keys, drops from above to skip opening the block
 								"d6sk:2, bombs, magnet, $destroy_crystal, $max_jump:1",
-								"d6sk:1, [d6sk:2], bombs, magnet, $destroy_crystal, $max_jump:1",
+								"d6sk:1, [d6sk:2], bombs, magnet, $destroy_crystal, $max_jump:1"
 							],
 							"item_count": 1
 						  },
@@ -2487,7 +2487,7 @@
 							"name": "D6 boss \nkey",
 							"hosted_item": "d6bk",
 							"item_count": 0
-						  },
+						  }
 
 						],
 						"map_locations": [
@@ -2497,7 +2497,7 @@
 							"y": 25
 						  }
 						]
-					},
+					}
 				]
 			},
 			{
@@ -2534,7 +2534,7 @@
 					"$portal_village, $temple_to_hns, $destroy_bush, $portal_village",
 					"$portal_remains, $remains_to_temple, $destroy_bush, $temple_to_hns",
 					"$portal_remains, $remains_to_temple, $destroy_bush, $portal_mountain",
-					"$portal_remains, $remains_to_temple, $destroy_bush, $portal_village",				
+					"$portal_remains, $remains_to_temple, $destroy_bush, $portal_village"				
 				],
 				"children": [
 					{
@@ -2546,7 +2546,7 @@
 								"bracelet"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -2565,7 +2565,7 @@
 								"flippers"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -2574,7 +2574,7 @@
 							"y": 662
 						  }
 						]
-					},
+					}
 				]
 			},
 			{
@@ -2583,9 +2583,9 @@
 				"children": [
 					{
 						
-					},
+					}
 				]
-			},
+			}
 		
 		]
 	},
@@ -2739,7 +2739,7 @@
 							"y": 75
 						  }
 						]
-					},
+					}
 				]
 			},
 			{
@@ -2802,7 +2802,7 @@
 							"y": 33
 						  }
 						]
-					},
+					}
 				]
 			},
 			{
@@ -2863,7 +2863,7 @@
 						  {
 							"name": "Second item \n(20 + 10 ember seeds)",
 							"access_rules": [
-								"{}", "[shovel], emberseeds",
+								"{}", "[shovel], emberseeds"
 							],
 							"capture_item": true,
 							"item_count": 1
@@ -2871,11 +2871,11 @@
 						  {
 							"name": "Fifth item \n(5)",
 							"access_rules": [
-								"{}", "[shovel]",
+								"{}", "[shovel]"
 							],
 							"capture_item": true,
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -2994,7 +2994,7 @@
 						  {
 							"name": "Fuse the ores",
 							"access_rules": [
-								"$max_jump:1, bracelet, blueore, redore",
+								"$max_jump:1, bracelet, blueore, redore"
 							],
 							"item_count": 1
 						  }
@@ -3006,7 +3006,7 @@
 							"y": 97
 						  }
 						]
-					},
+					}
 				]
 			},
 			{
@@ -3042,7 +3042,7 @@
 							"name": "Pits chest",
 							"access_rules": [
 								"$max_jump:3",
-								"magnet",
+								"magnet"
 							],
 							"item_count": 1
 						  }
@@ -3073,7 +3073,7 @@
 							"y": 54
 						  }
 						]
-					},
+					}
 				]
 			},
 			{
@@ -3092,7 +3092,7 @@
 						"$destroy_pot, $shoot_seeds",
 						"$destroy_pot, $max_jump:1, satchel, emberseeds, [$shoot_seeds]",
 						"$destroy_pot, $max_jump:1, satchel, scentseeds, [$shoot_seeds]",
-						"$destroy_pot, $max_jump:1, satchel, mysteryseeds, [$shoot_seeds]",
+						"$destroy_pot, $max_jump:1, satchel, mysteryseeds, [$shoot_seeds]"
 					],
 					"item_count": 1
 				  },
@@ -3105,7 +3105,7 @@
 						"$max_jump:1, slingshot2",
 						"$max_jump:1, satchel, emberseeds, [slingshot2]",
 						"$max_jump:1, satchel, mysteryseeds, [slingshot2]",
-						"$max_jump:1, satchel, scentseeds, [slingshot2]",
+						"$max_jump:1, satchel, scentseeds, [slingshot2]"
 					],
 					"item_count": 1
 				  },
@@ -3115,7 +3115,7 @@
 						// Can get every single chest in D8
 						"$d8clear",
 						
-						"$kill_magunesu, $kill_hardhat_magnet",
+						"$kill_magunesu, $kill_hardhat_magnet"
 					],
 					"item_count": 1
 				  },
@@ -3126,7 +3126,7 @@
 						"$d8clear",
 						
 						"d8sk:1, $kill_magunesu, $max_jump:3",
-						"d8sk:1, $kill_magunesu, $max_jump:2, [$max_jump:3]",
+						"d8sk:1, $kill_magunesu, $max_jump:2, [$max_jump:3]"
 					],
 					"item_count": 1
 				  },
@@ -3137,7 +3137,7 @@
 						"$d8clear",
 						
 						"d8sk:2, $kill_magunesu, $max_jump:3",
-						"d8sk:2, $kill_magunesu, $max_jump:2, [$max_jump:3]",
+						"d8sk:2, $kill_magunesu, $max_jump:2, [$max_jump:3]"
 					],
 					"item_count": 1
 				  },
@@ -3148,7 +3148,7 @@
 						"$d8clear",
 						
 						"d8sk:2, $kill_magunesu, $max_jump:3, magnet",
-						"d8sk:2, $kill_magunesu, $max_jump:2, magnet, [$max_jump:3]",
+						"d8sk:2, $kill_magunesu, $max_jump:2, magnet, [$max_jump:3]"
 					],
 					"item_count": 1
 				  },
@@ -3159,7 +3159,7 @@
 						"$d8clear",
 						
 						"d8sk:2, $kill_magunesu, $max_jump:3, magnet",
-						"d8sk:2, $kill_magunesu, $max_jump:2, magnet, [$max_jump:3]",
+						"d8sk:2, $kill_magunesu, $max_jump:2, magnet, [$max_jump:3]"
 					],
 					"item_count": 1
 				  },
@@ -3177,7 +3177,7 @@
 						"d8sk:2, $kill_magunesu, $max_jump:2, magnet, bombs, slingshot2, [$max_jump:3]",
 						"d8sk:2, $kill_magunesu, $max_jump:2, magnet, bombs, satchel, emberseeds, [slingshot2], [$max_jump:3]",
 						"d8sk:2, $kill_magunesu, $max_jump:2, magnet, bombs, satchel, scentseeds, [slingshot2], [$max_jump:3]",
-						"d8sk:2, $kill_magunesu, $max_jump:2, magnet, bombs, satchel, mysteryseeds, [slingshot2], [$max_jump:3]",
+						"d8sk:2, $kill_magunesu, $max_jump:2, magnet, bombs, satchel, mysteryseeds, [slingshot2], [$max_jump:3]"
 						
 					],
 					"item_count": 1
@@ -3190,7 +3190,7 @@
 						
 						"[d8sk:3], $kill_magunesu, $max_jump:3, magnet, [slingshot2], [emberseeds], [magicboomerang], $kill_keese, $kill_polsvoice_pit",
 						"[d8sk:3], $kill_magunesu, $max_jump:2, [$max_jump:3], [slingshot2], [emberseeds], [magicboomerang], $kill_keese, $kill_polsvoice_pit",
-						"[d8sk:3], $kill_magunesu, $max_jump:4, magnet, [slingshot2], [emberseeds], $kill_keese, $kill_polsvoice_pit",
+						"[d8sk:3], $kill_magunesu, $max_jump:4, magnet, [slingshot2], [emberseeds], $kill_keese, $kill_polsvoice_pit"
 					],
 					"item_count": 1
 				  },
@@ -3202,7 +3202,7 @@
 						
 						"d8sk:4, $kill_magunesu, $max_jump:3, magnet, slingshot2, emberseeds, bombs",
 						"d8sk:1, [d8sk:4], $kill_magunesu, $max_jump:4, bombs",
-						"d8sk:4, $kill_magunesu, $max_jump:2, [$max_jump:3], magnet, slingshot2, emberseeds, bombs",
+						"d8sk:4, $kill_magunesu, $max_jump:2, [$max_jump:3], magnet, slingshot2, emberseeds, bombs"
 					],
 					"item_count": 1
 				  },
@@ -3214,7 +3214,7 @@
 						
 						"d8sk:4, $kill_magunesu, $max_jump:3, magnet, slingshot2, emberseeds, bracelet",
 						"d8sk:1, [d8sk:4], $kill_magunesu, $max_jump:4, bracelet",
-						"d8sk:4, $kill_magunesu, $max_jump:2, [$max_jump:3], magnet, slingshot2, emberseeds, bracelet",
+						"d8sk:4, $kill_magunesu, $max_jump:2, [$max_jump:3], magnet, slingshot2, emberseeds, bracelet"
 					],
 					"item_count": 1
 				  },
@@ -3226,7 +3226,7 @@
 						
 						"d8sk:4, $kill_magunesu, $max_jump:3, magnet, slingshot2, emberseeds, bracelet",
 						"d8sk:1, [d8sk:4], $kill_magunesu, $max_jump:4, bracelet",
-						"d8sk:4, $kill_magunesu, $max_jump:2, [$max_jump:3], magnet, slingshot2, emberseeds, bracelet",
+						"d8sk:4, $kill_magunesu, $max_jump:2, [$max_jump:3], magnet, slingshot2, emberseeds, bracelet"
 					],
 					"item_count": 1
 				  },
@@ -3238,7 +3238,7 @@
 						
 						"d8sk:4, $kill_magunesu, $max_jump:3, magnet, slingshot2, emberseeds",
 						"d8sk:1, [d8sk:4], $kill_magunesu, $max_jump:4",
-						"d8sk:4, $kill_magunesu, $max_jump:2, [$max_jump:3], magnet, slingshot2, emberseeds",
+						"d8sk:4, $kill_magunesu, $max_jump:2, [$max_jump:3], magnet, slingshot2, emberseeds"
 					],
 					"item_count": 1
 				  },
@@ -3252,7 +3252,7 @@
 						"d8bk, d8sk:7, $kill_magunesu, $max_jump:3, magnet, slingshot2, emberseeds, magicboomerang, $hit_lever, bracelet, $kill_medusahead",
 						"d8bk, d8sk:7, $kill_magunesu, $max_jump:2, [$max_jump:3], magnet, slingshot2, emberseeds, magicboomerang, $hit_lever, bracelet, $kill_medusahead",
 						"d8bk, d8sk:7, $kill_magunesu, $max_jump:4, magnet, slingshot2, emberseeds, $hit_lever, bracelet, $kill_medusahead",
-						"d8bk, d8sk:4, [d8bk:7], $kill_magunesu, $max_jump:4, bombs, bracelet, $kill_medusahead",
+						"d8bk, d8sk:4, [d8bk:7], $kill_magunesu, $max_jump:4, bombs, bracelet, $kill_medusahead"
 					],
 					"item_count": 1
 				  },
@@ -3265,7 +3265,7 @@
 						"d8bk, d8sk:7, $kill_magunesu, $max_jump:3, magnet, slingshot2, emberseeds, magicboomerang, $hit_lever, bracelet, $kill_medusahead",
 						"d8bk, d8sk:7, $kill_magunesu, $max_jump:2, [$max_jump:3], magnet, slingshot2, emberseeds, magicboomerang, $hit_lever, bracelet, $kill_medusahead",
 						"d8bk, d8sk:7, $kill_magunesu, $max_jump:4, magnet, slingshot2, emberseeds, $hit_lever, bracelet, $kill_medusahead",
-						"d8bk, d8sk:4, [d8bk:7], $kill_magunesu, $max_jump:4, bracelet, $kill_medusahead",
+						"d8bk, d8sk:4, [d8bk:7], $kill_magunesu, $max_jump:4, bracelet, $kill_medusahead"
 					],
 					"hosted_item": "d8",
 					"item_count": 0
@@ -3279,7 +3279,7 @@
 					"name": "D8 boss \nkey",
 					"hosted_item": "d8bk",
 					"item_count": 0
-				  },
+				  }
 				],
 				"map_locations": [
 				  {
@@ -3304,7 +3304,7 @@
 				  {
 					"name": "Respawnable bushes",
 					"access_rules": [
-						"[mysteryseeds], $destroy_bush_respawn, $kill_magunesu, $destroy_pot, $shoot_seeds, $max_jump:3, $kill_hardhat_magnet, magnet",
+						"[mysteryseeds], $destroy_bush_respawn, $kill_magunesu, $destroy_pot, $shoot_seeds, $max_jump:3, $kill_hardhat_magnet, magnet"
 					],
 					"hosted_item": "mysteryseeds",
 					"item_count": 0
@@ -3322,7 +3322,7 @@
 					"y": 40
 				  }
 				]
-			},
+			}
 		]
 	}
 ]
