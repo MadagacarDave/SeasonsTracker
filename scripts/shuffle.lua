@@ -238,7 +238,7 @@ end
 function tracker_on_accessibility_updated()
 	for dungeon,_ in pairs(dungeon_index) do 
 		for entrance,_ in pairs(dungeon_index) do 
-			if has(dungeon .. "_" .. entrance) then
+			if has(dungeon .. "_from_" .. entrance) then
 				update_dungeon_check(dungeon, entrance)
 			end
 		end
