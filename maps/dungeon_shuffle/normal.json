@@ -1811,9 +1811,7 @@
 								// Can get every single chest in D3
 								"$d3clear",
 								
-								"$kill_beetle, bracelet",
-								"bracelet, shovel",
-								"bracelet, shield1"
+								"$kill_beetle, bracelet"
 							],
 							"item_count": 1
 						  },
@@ -1823,9 +1821,8 @@
 								// Can get every single chest in D3
 								"$d3clear",
 								
-								"$kill_beetle, $kill_moldorm",
-								"bracelet, shovel, $kill_moldorm",
-								"bracelet, shield1, $kill_moldorm"
+								"$kill_beetle, $kill_moldorm, bracelet",
+								"$kill_beetle, $kill_moldorm, $max_jump:1"
 							],
 							"item_count": 1
 						  },
@@ -1835,9 +1832,8 @@
 								// Can get every single chest in D3
 								"$d3clear",
 								
-								"$kill_beetle, bombs",
-								"bracelet, shovel, bombs",
-								"bracelet, shield1, bombs"
+								"$kill_beetle, bombs, bracelet",
+								"$kill_beetle, bombs, $max_jump:1"
 							],
 							"item_count": 1
 						  },
@@ -1847,12 +1843,10 @@
 								// Can get every single chest in D3
 								"$d3clear",
 								
-								"d3sk:2, $kill_beetle, $kill_mimic",
-								"d3sk:1, [d3sk:2], $kill_beetle, $kill_mimic",
-								"d3sk:2, shovel, bracelet, $kill_mimic",
-								"d3sk:1, [d3sk:2], shovel, bracelet, $kill_mimic",
-								"d3sk:2, shield1, bracelet, $kill_mimic",
-								"d3sk:1, [d3sk:2], shield1, bracelet, $kill_mimic"
+								"d3sk:2, $kill_beetle, $kill_mimic, $max_jump:1",
+								"d3sk:1, [d3sk:2], $kill_beetle, $kill_mimic, $max_jump:1",
+								"d3sk:2, $kill_beetle, $kill_mimic, bracelet",
+								"d3sk:1, [d3sk:2], $kill_beetle, $kill_mimic, bracelet"
 							],
 							"item_count": 1
 						  },
@@ -1863,8 +1857,6 @@
 								"$d3clear",
 								
 								"$kill_beetle, bracelet",
-								"shovel, bracelet",
-								"shield1, bracelet",
 								"$kill_beetle, $max_jump:1"
 							],
 							"item_count": 1
@@ -1875,9 +1867,7 @@
 								// Can get every single chest in D3
 								"$d3clear",
 								
-								"$kill_beetle, $max_jump:1",
-								"bracelet, shovel, $max_jump:1",
-								"bracelet, shield1, $max_jump:1"
+								"$kill_beetle, $max_jump:1"
 							],
 							"item_count": 1
 						  },
@@ -1887,9 +1877,7 @@
 								// Can get every single chest in D3
 								"$d3clear",
 								
-								"$kill_beetle, $max_jump:1",
-								"bracelet, shovel, $max_jump:1",
-								"bracelet, shield1, $max_jump:1"
+								"$kill_beetle, $max_jump:1"
 							],
 							"item_count": 1
 						  },
@@ -1899,9 +1887,7 @@
 								// Can get every single chest in D3
 								"$d3clear",
 								
-								"$kill_beetle, $max_jump:1",
-								"bracelet, shovel, $max_jump:1",
-								"bracelet, shield1, $max_jump:1"
+								"$kill_beetle, $max_jump:1"
 							],
 							"item_count": 1
 						  },
@@ -1912,11 +1898,7 @@
 								"$d3clear",
 								
 								"d3sk:2, $kill_beetle, $kill_omuai, $max_jump:1",
-								"d3sk:1, [d3sk:2], $kill_beetle, $kill_omuai, $max_jump:1",
-								"d3sk:2, shovel, $kill_omuai, $max_jump:1",
-								"d3sk:1, [d3sk:2], shovel, $kill_omuai, $max_jump:1",
-								"d3sk:2, shield1, $kill_omuai, $max_jump:1",
-								"d3sk:1, [d3sk:2], shield1, $kill_omuai, $max_jump:1"
+								"d3sk:1, [d3sk:2], $kill_beetle, $kill_omuai, $max_jump:1"
 							],
 							"item_count": 1
 						  },
@@ -1928,11 +1910,7 @@
 								"$d3clear",
 								
 								"d3bk, d3sk:2, $kill_beetle, $kill_omuai, $max_jump:1, $kill_mothula",
-								"d3bk, d3sk:1, [d3sk:2], $kill_beetle, $kill_omuai, $max_jump:1, $kill_mothula",
-								"d3bk, d3sk:2, shovel, $kill_omuai, $max_jump:1, $kill_mothula",
-								"d3bk, d3sk:1, [d3sk:2], shovel, $kill_omuai, $max_jump:1, $kill_mothula",
-								"d3bk, d3sk:2, shield1, $kill_omuai, $max_jump:1, $kill_mothula",
-								"d3bk, d3sk:1, [d3sk:2], shield1, $kill_omuai, $max_jump:1, $kill_mothula"
+								"d3bk, d3sk:1, [d3sk:2], $kill_beetle, $kill_omuai, $max_jump:1, $kill_mothula"
 							],
 							"item_count": 1
 						  },
@@ -1943,11 +1921,7 @@
 								"$d3clear",
 								
 								"d3bk, d3sk:2, $kill_beetle, $kill_omuai, $max_jump:1, $kill_mothula",
-								"d3bk, d3sk:1, [d3sk:2], $kill_beetle, $kill_omuai, $max_jump:1, $kill_mothula",
-								"d3bk, d3sk:2, shovel, $kill_omuai, $max_jump:1, $kill_mothula",
-								"d3bk, d3sk:1, [d3sk:2], shovel, $kill_omuai, $max_jump:1, $kill_mothula",
-								"d3bk, d3sk:2, shield1, $kill_omuai, $max_jump:1, $kill_mothula",
-								"d3bk, d3sk:1, [d3sk:2], shield1, $kill_omuai, $max_jump:1, $kill_mothula"
+								"d3bk, d3sk:1, [d3sk:2], $kill_beetle, $kill_omuai, $max_jump:1, $kill_mothula"
 							],
 							"hosted_item": "d3",
 							"item_count": 0
