@@ -914,7 +914,8 @@
 									// Can get every single chest in D5
 									"$d5clear_hard",
 
-									"$kill_moldorm_hard, $kill_hard"
+									"$kill_moldorm_hard, $kill_hard",
+									"shield"
 								],
 							"item_count": 1
 						  },
