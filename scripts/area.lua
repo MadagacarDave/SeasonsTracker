@@ -327,7 +327,7 @@ end
 
 function scent_suburbs()
 	--only path that doesn't require any of the above items
-	return village_to_suburbs() and
+	return suburbs_from_south() and
 	suburbs_to_fountain() and
 	(has("spring") or has("suburbs_spring")) and--climb up to natzu area
 	cross_natzu()
