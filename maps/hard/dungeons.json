@@ -1209,6 +1209,31 @@
 							"y": 68
 						  }
 						]
+					},
+					{
+						"name": "Get ember seeds in \nD4 Miniboss room",
+						"access_rules": [
+								"$enter_d4_hard"
+							],
+						"sections": [
+						  {
+							"name": "Inside the bushes",
+							"access_rules": [
+								"[emberseeds], flippers, $max_jump:1, bombs, $hit_lever, $kill_stalfos_hard, $destroy_bush_respawn",
+								"[emberseeds], flippers, $max_jump:1, bombs, $hit_lever, bracelet, $destroy_bush_respawn",
+								"[emberseeds], flippers, $max_jump:1, $kill_shroudedstalfos, $destroy_bush_respawn"
+							],
+							"hosted_item": "emberseeds",
+							"item_count": 0
+						  }
+						],
+						"map_locations": [
+						  {
+							"map": "holodrum",
+							"x": 564,
+							"y": 54
+						  }
+						]
 					}
 				]
 			},

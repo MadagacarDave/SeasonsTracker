@@ -2301,6 +2301,98 @@
 								]
 							}
 						]
+					},
+					{
+						"name": "Get ember seeds in \nD4's Miniboss",
+						"access_rules": [
+								"$d4_shuffle_hard"
+							],
+						"sections": [
+						  {
+							"name": "Inside the bushes",
+							"access_rules": [
+								"[emberseeds], flippers, $max_jump:1, bombs, $hit_lever, $kill_stalfos_hard, $destroy_bush_respawn",
+								"[emberseeds], flippers, $max_jump:1, bombs, $hit_lever, bracelet, $destroy_bush_respawn",
+								"[emberseeds], flippers, $max_jump:1, $kill_shroudedstalfos, $destroy_bush_respawn"
+							],
+							"hosted_item": "emberseeds",
+							"item_count": 0
+						  }
+						],
+						"map_locations": [
+							{
+								"map": "holodrum",
+								"x": 266,
+								"y": 392,
+								"restrict_visibility_rules": [
+									"d4_d1"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 563,
+								"y": 349,
+								"restrict_visibility_rules": [
+									"d4_d2"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 40,
+								"y": 264,
+								"restrict_visibility_rules": [
+									"d4_d3"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 563,
+								"y": 53,
+								"restrict_visibility_rules": [
+									"d4_d4"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 434,
+								"y": 349,
+								"restrict_visibility_rules": [
+									"d4_d5"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 40,
+								"y": 40,
+								"restrict_visibility_rules": [
+									"d4_d6"
+								]
+							},
+							  {
+								"map": "holodrum",
+								"x": 40,
+								"y": 563,
+								"restrict_visibility_rules": [
+									"d4_d7"
+								]
+							  },
+							{
+								"map": "subrosia",
+								"x": 19,
+								"y": 19,
+								"restrict_visibility_rules": [
+									"d4_d8"
+								]
+							},
+							  {
+								"map": "holodrum",
+								"x": 179,
+								"y": 40,
+								"restrict_visibility_rules": [
+									"d4_d8"
+								]
+							  }
+						]
 					}
 				]
 			},
