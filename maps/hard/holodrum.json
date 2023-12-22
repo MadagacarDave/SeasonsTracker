@@ -11,7 +11,7 @@
 					{
 						"name": "Maku Tree",
 						"access_rules": [
-							"sword1",
+							"sword1"
 						],
 						"sections": [
 						  {
@@ -50,7 +50,7 @@
 					{
 						"name": "Mushroom chest",
 						"access_rules": [
-								"$destroy_mushroom",
+								"$destroy_mushroom"
 							],
 						"sections": [
 						  {
@@ -92,7 +92,7 @@
 						  {
 							"name": "Unique item (150)",
 							"access_rules": [
-								"",
+								""
 							],
 							"capture_item": true,
 							"item_count": 1
@@ -100,7 +100,7 @@
 						  {
 							"name": "Member's Shop 1 (300)",
 							"access_rules": [
-								"$member_shop",
+								"$member_shop"
 							],
 							"capture_item": true,
 							"item_count": 1
@@ -108,7 +108,7 @@
 						  {
 							"name": "Member's Shop 2 (200)",
 							"access_rules": [
-								"$member_shop",
+								"$member_shop"
 							],
 							"capture_item": true,
 							"item_count": 1
@@ -116,11 +116,11 @@
 						  {
 							"name": "Member's Shop 3 (300)",
 							"access_rules": [
-								"$member_shop",
+								"$member_shop"
 							],
 							"capture_item": true,
 							"item_count": 1
-						  },
+						  }
 						  
 						],
 						"map_locations": [
@@ -130,7 +130,7 @@
 							"y": 620
 						  }
 						]
-					},
+					}
 				]
 			},
 			{
@@ -161,7 +161,7 @@
 							"name": "Hero's cave\nsmall key",
 							"hosted_item": "d0sk",
 							"item_count": 0
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -180,7 +180,7 @@
 						  {
 							"name": "Kill the beast",
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -193,13 +193,13 @@
 					{
 						"name": "Pirate area",
 						"access_rules": [
-							"$pirate_ship_hard",
+							"$pirate_ship_hard"
 						],
 						"sections": [
 						  {
 							"name": "Coast chest",
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -212,13 +212,13 @@
 					{
 						"name": "Abandoned house",
 						"access_rules": [
-							"$pirate_ship_hard",
+							"$pirate_ship_hard"
 						],
 						"sections": [
 						  {
 							"name": "Bed chest",
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -227,7 +227,7 @@
 							"y": 578
 						  }
 						]
-					},
+					}
 				]
 			},	
 			{
@@ -238,13 +238,13 @@
 						"access_rules": [
 							"$max_jump:3",
 							"north_fall, $max_jump:1",
-							"$north_stump, fall, $max_jump:1",
+							"$north_stump, fall, $max_jump:1"
 						],
 						"sections": [
 						  {
 							"name": "Pits chest",
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -272,10 +272,10 @@
 								"$d5_stump, $ricky, summer, flippers",
 								
 								"$enter_d5, bombs, north_summer, bracelet, $max_jump:1, flippers",
-								"$enter_d5, $ricky, north_summer, bracelet, $max_jump:1, flippers",
+								"$enter_d5, $ricky, north_summer, bracelet, $max_jump:1, flippers"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -289,13 +289,13 @@
 						"name": "Dry Eyeglass Lake",
 						"access_rules": [
 								"$d5_stump, $wet_lake, summer, bracelet",
-								"$d5_stump, $wet_lake, north_summer, $enter_d5, bracelet",
+								"$d5_stump, $wet_lake, north_summer, $enter_d5, bracelet"
 							],
 						"sections": [
 						  {
 							"name": "Rock cave",
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -304,7 +304,7 @@
 							"y": 448
 						  }
 						]
-					},
+					}
 				]
 			},
 			{
@@ -323,7 +323,7 @@
 					"$portal_mountain, $temple_to_hns_hard, $destroy_bush",
 					"$portal_lake_hard, $furnace_to_beach_hard, $temple_to_beach, $destroy_bush",
 					"$portal_village_hard, $temple_to_hns_hard, $destroy_bush",
-					"$portal_remains_hard, $remains_to_temple_hard, $destroy_bush",
+					"$portal_remains_hard, $remains_to_temple_hard, $destroy_bush"
 					
 					//"$fairy_fountain_natzu_hard, satchel, galeseeds",
 					
@@ -343,7 +343,7 @@
 								"spring, bracelet, magnet",
 								"suburbs_spring, bracelet, $max_jump:2",
 								"suburbs_spring, bracelet, $max_jump:1, bombs",
-								"suburbs_spring, bracelet, magnet",
+								"suburbs_spring, bracelet, magnet"
 							],
 							"item_count": 1
 						  }
@@ -366,7 +366,7 @@
 							
 							"$sunken_city, $natzu_to_suburbs, $fountain_to_D2",
 							"$scent_tree_hard, $natzu_to_moblin_hard, $moblin_keep_to_sunken, $natzu_to_suburbs, $fountain_to_D2",
-							"$mount_cucco, flippers, $cucco_to_sunken, $natzu_to_suburbs, $fountain_to_D2",
+							"$mount_cucco, flippers, $cucco_to_sunken, $natzu_to_suburbs, $fountain_to_D2"
 						],
 						"sections": [
 						  {
@@ -377,9 +377,9 @@
 								"{}"
 							],
 							"capture_item": true,
-							"item_count": 1,
+							"item_count": 1
 							//"hosted_item": "tree_wow"
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -388,7 +388,7 @@
 							"y": 407
 						  }
 						]
-					},
+					}
 				]
 			},
 			{
@@ -406,7 +406,7 @@
 					"$portal_village_hard, $temple_to_hns_hard, $destroy_bush, $suburbs_to_fountain, $fountain_to_WoW",
 					"$portal_remains_hard, $remains_to_temple_hard, $destroy_bush, $suburbs_to_fountain, $fountain_to_WoW",
 					
-					"$sunken_city, $sunken_to_wow, flippers",
+					"$sunken_city, $sunken_to_wow, flippers"
 					],
 				"children": [
 					{
@@ -439,10 +439,10 @@
 								"$ricky, $destroy_bush, summer",
 								"$ricky, $destroy_bush, [summer], $sunken_city, $sunken_to_wow, flippers",
 								"$ricky, $destroy_bush, fall",
-								"$ricky, $destroy_bush, [fall], $sunken_city, $sunken_to_wow, flippers",
+								"$ricky, $destroy_bush, [fall], $sunken_city, $sunken_to_wow, flippers"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -460,10 +460,10 @@
 							"access_rules": [
 								"$max_jump:3",
 								"$max_jump:2, bombs",
-								"flippers",
+								"flippers"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -480,10 +480,10 @@
 							"name": "Be Santa Claus",
 							"access_rules": [
 								"wow_winter", 
-								"winter",
+								"winter"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -492,7 +492,7 @@
 							"y": 322
 						  }
 						]
-					},
+					}
 				]
 			},
 			{
@@ -514,9 +514,9 @@
 								"{}"
 							],
 							"capture_item": "true",
-							"item_count": 1,
+							"item_count": 1
 							//"hosted_item": "tree_plain"
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -532,7 +532,7 @@
 						  {
 							"name": "(ง •̀_•́)ง",
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -552,10 +552,10 @@
 								"flippers, $dimitri, plain_fall",
 								
 								"flippers, $destroy_mushroom, $plain_stump_hard, fall",
-								"flippers, $dimitri, $plain_stump_hard, fall",
+								"flippers, $dimitri, $plain_stump_hard, fall"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -572,10 +572,10 @@
 							"name": "Free item",
 							"access_rules": [
 								"flippers",
-								"$dimitri",
+								"$dimitri"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -591,10 +591,10 @@
 						  {
 							"name": "Water chest",
 							"access_rules": [
-								"flippers",
+								"flippers"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -603,7 +603,7 @@
 							"y": 492
 						  }
 						]
-					},
+					}
 				]
 			},
 			{
@@ -625,9 +625,9 @@
 								"{}"
 							],
 							"capture_item": "true",
-							"item_count": 1,
+							"item_count": 1
 							//"hosted_item": "tree_swamp"
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -643,10 +643,10 @@
 						  {
 							"name": "Flooded item",
 							"access_rules": [
-								"$pegasus_tree_hard, $hit_lever",
+								"$pegasus_tree_hard, $hit_lever"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -668,10 +668,10 @@
 								
 								"$south_swamp_hard, $swamp_stump_hard, winter, shovel, bombs",
 								"$south_swamp_hard, $swamp_stump_hard, winter, $any_flute, bombs",
-								"$south_swamp_hard, $swamp_stump_hard, winter, $ricky",
+								"$south_swamp_hard, $swamp_stump_hard, winter, $ricky"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -680,7 +680,7 @@
 							"y": 534
 						  }
 						]
-					},
+					}
 				]
 			},
 			{
@@ -694,10 +694,10 @@
 							"access_rules": [
 								"$scent_tree_hard, flippers",
 								"$scent_tree_hard, $dimitri",
-								"$sunken_city, natzu_dimitri, $max_jump:4",
+								"$sunken_city, natzu_dimitri, $max_jump:4"
 							],
 							"item_count": 1
-						  },
+						  }
 						  
 						],
 						"map_locations": [
@@ -717,10 +717,10 @@
 								"$scent_tree, $natzu_to_moblin, bracelet",
 								
 								"$sunken_city, $sunken_to_moblin_hard, bracelet",
-								"$mount_cucco_hard, flippers, $cucco_to_sunken, $sunken_to_moblin_hard, bracelet",
+								"$mount_cucco_hard, flippers, $cucco_to_sunken, $sunken_to_moblin_hard, bracelet"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -729,7 +729,7 @@
 							"y": 237
 						  }
 						]
-					},
+					}
 				]
 			},	
 			{
@@ -742,7 +742,7 @@
 					"$scent_tree, $cross_natzu_hard, sunken_winter",
 					"$scent_tree, $natzu_to_moblin_hard, $moblin_keep_to_sunken, $cross_water",
 					"$scent_tree, $natzu_to_moblin_hard, $moblin_keep_to_sunken, sunken_winter",
-					"$mount_cucco, flippers, $cucco_to_sunken",
+					"$mount_cucco, flippers, $cucco_to_sunken"
 				],
 				"children": [
 					{
@@ -759,9 +759,9 @@
 								"{}"
 							],
 							"capture_item": "true",
-							"item_count": 1,
+							"item_count": 1
 							//"hosted_item": "tree_sunken"
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -781,7 +781,7 @@
 							"name": "Master Diver's \nchallenge",
 							"access_rules": [
 								"sword1, $max_jump:1",
-								"sword1, flippers",
+								"sword1, flippers"
 							],
 							"item_count": 1
 						  },
@@ -804,7 +804,7 @@
 								"$dimitri"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -821,10 +821,10 @@
 							"name": "Summer cave",
 							"access_rules": [
 								"$destroy_bush, flippers, sunken_summer",
-								"$destroy_bush, flippers, summer",
+								"$destroy_bush, flippers, summer"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -833,7 +833,7 @@
 							"y": 195
 						  }
 						]
-					},
+					}
 				]
 			},
 			{
@@ -858,12 +858,12 @@
 								"sunken_spring, bracelet, $max_jump:1, sword1",								
 								"sunken_spring, bracelet, $max_jump:1, foolsore, $destroy_flower",								
 								"sunken_spring, bracelet, $max_jump:1, foolsore, banana",								
-								"sunken_spring, bracelet, $max_jump:1, foolsore, satchel, galeseeds",								
+								"sunken_spring, bracelet, $max_jump:1, foolsore, satchel, galeseeds"						
 								
 							],
 							"capture_item": true,
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -882,10 +882,10 @@
 								"spring, bracelet, $destroy_flower",
 								"sunken_spring, bracelet, $destroy_flower",
 								"bracelet, satchel, galeseeds",
-								"bracelet, [satchel], [galeseeds], treewarp",														
+								"bracelet, [satchel], [galeseeds], treewarp"														
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -901,10 +901,10 @@
 						  {
 							"name": "Chest past blocks",
 							"access_rules": [
-								"$talon_cave_hard",	
+								"$talon_cave_hard"	
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -920,10 +920,10 @@
 						  {
 							"name": "Underwater item",
 							"access_rules": [
-								"$talon_cave_hard, flippers",
+								"$talon_cave_hard, flippers"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -932,7 +932,7 @@
 							"y": 50
 						  }
 						]
-					},
+					}
 				]
 			},
 			{
@@ -946,11 +946,11 @@
 							"access_rules": [
 								"{$mount_cucco_hard}",
 								"$mount_cucco_hard, banana",
-								"$mount_cucco_hard, $max_jump:3",
+								"$mount_cucco_hard, $max_jump:3"
 							],
 							"capture_item": true,
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -966,10 +966,10 @@
 						  {
 							"name": "Lava room chest",
 							"access_rules": [
-								"$goron_mountain_hard, bombs, $max_jump:2",
+								"$goron_mountain_hard, bombs, $max_jump:2"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -978,7 +978,7 @@
 							"y": 88
 						  }
 						]
-					},
+					}
 				]
 			},
 			{
@@ -996,7 +996,7 @@
 								"$destroy_mushroom, winter, spring, summer, fall"
 							],
 							"item_count": 1
-						  },
+						  }
 						  
 						],
 						"map_locations": [
@@ -1019,12 +1019,12 @@
 							"name": "Seeds",
 							"access_rules": [
 								"$harvest_seeds",
-								"{}",
+								"{}"
 							],
 							"capture_item": "true",
-							"item_count": 1,
+							"item_count": 1
 							//"hosted_item": "tree_tarm"
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -1040,10 +1040,10 @@
 						  {
 							"name": "Chest down the stairs",
 							"access_rules": [
-								"$tarm_tree, $use_seeds, emberseeds",
+								"$tarm_tree, $use_seeds, emberseeds"
 								],
 							"item_count": 1
-						  },
+						  }
 						  
 						],
 						"map_locations": [
@@ -1053,7 +1053,7 @@
 							"y": 85
 						  }
 						]
-					},
+					}
 				]
 			},
 			{
@@ -1068,7 +1068,7 @@
 					"$portal_swamp, $temple_to_beach, $destroy_bush, $pirate_house_hard",
 					"$portal_mountain, $temple_to_hns_hard, $destroy_bush, $pirate_house_hard",
 					"$portal_village_hard, $temple_to_hns_hard, $destroy_bush, $pirate_house_hard",
-					"$portal_remains_hard, $remains_to_temple_hard, $destroy_bush, $pirate_house_hard",
+					"$portal_remains_hard, $remains_to_temple_hard, $destroy_bush, $pirate_house_hard"
 						
 					//"treewarp, $fairy_fountain_natzu_hard, $pirate_house, [spring]",
 					//"notreewarp, $fairy_fountain_natzu_hard, $pirate_house, spring",
@@ -1084,7 +1084,7 @@
 								"bracelet"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -1103,7 +1103,7 @@
 								"flippers"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -1112,7 +1112,7 @@
 							"y": 662
 						  }
 						]
-					},
+					}
 				]
 			},
 			{
@@ -1121,9 +1121,9 @@
 				"children": [
 					{
 						
-					},
+					}
 				]
-			},
+			}
 		
 		]
 	}

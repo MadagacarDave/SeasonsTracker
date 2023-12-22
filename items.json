@@ -35,12 +35,12 @@
 	  {
 		"img": "images/shield2.png",
 		"codes": "shield2, ironshield"
-	  },
-	  //{
-		//"img": "images/shield3.png",
-		//"codes": "shield3, mirrorshield"
-	  //},
-	]
+	    }
+	    //{
+		    //"img": "images/shield3.png",
+		    //"codes": "shield3, mirrorshield"
+	    //},
+	  ]
   },
   
   // Power Bracelet
@@ -1738,5 +1738,391 @@
       },
     ]
   },
+   /// DUNGEON ENTRANCES DUMMY ITEMS ///
+ 
+   {
+    "name": "D1 from D1 Entrance",
+    "type": "toggle",
+    "img": "images/D1.png",
+    "codes": "d1_from_d1"
+},
+{
+    "name": "D1 from D2 Entrance",
+    "type": "toggle",
+    "img": "images/D1.png",
+    "codes": "d1_from_d2"
+},
+{
+    "name": "D1 from D3 Entrance",
+    "type": "toggle",
+    "img": "images/D1.png",
+    "codes": "d1_from_d3"
+},
+{
+    "name": "D1 from D4 Entrance",
+    "type": "toggle",
+    "img": "images/D1.png",
+    "codes": "d1_from_d4"
+},
+{
+    "name": "D1 from D5 Entrance",
+    "type": "toggle",
+    "img": "images/D1.png",
+    "codes": "d1_from_d5"
+},
+{
+    "name": "D1 from D6 Entrance",
+    "type": "toggle",
+    "img": "images/D1.png",
+    "codes": "d1_from_d6"
+},
+{
+    "name": "D1 from D7 Entrance",
+    "type": "toggle",
+    "img": "images/D1.png",
+    "codes": "d1_from_d7"
+},
+{
+    "name": "D1 from D8 Entrance",
+    "type": "toggle",
+    "img": "images/D1.png",
+    "codes": "d1_from_d8"
+},
+{
+    "name": "D2 from D1 Entrance",
+    "type": "toggle",
+    "img": "images/D2.png",
+    "codes": "d2_from_d1"
+},
+{
+    "name": "D2 from D2 Entrance",
+    "type": "toggle",
+    "img": "images/D2.png",
+    "codes": "d2_from_d2"
+},
+{
+    "name": "D2 from D3 Entrance",
+    "type": "toggle",
+    "img": "images/D2.png",
+    "codes": "d2_from_d3"
+},
+{
+    "name": "D2 from D4 Entrance",
+    "type": "toggle",
+    "img": "images/D2.png",
+    "codes": "d2_from_d4"
+},
+{
+    "name": "D2 from D5 Entrance",
+    "type": "toggle",
+    "img": "images/D2.png",
+    "codes": "d2_from_d5"
+},
+{
+    "name": "D2 from D6 Entrance",
+    "type": "toggle",
+    "img": "images/D2.png",
+    "codes": "d2_from_d6"
+},
+{
+    "name": "D2 from D7 Entrance",
+    "type": "toggle",
+    "img": "images/D2.png",
+    "codes": "d2_from_d7"
+},
+{
+    "name": "D2 from D8 Entrance",
+    "type": "toggle",
+    "img": "images/D2.png",
+    "codes": "d2_from_d8"
+},
+{
+    "name": "D3 from D1 Entrance",
+    "type": "toggle",
+    "img": "images/D3.png",
+    "codes": "d3_from_d1"
+},
+{
+    "name": "D3 from D2 Entrance",
+    "type": "toggle",
+    "img": "images/D3.png",
+    "codes": "d3_from_d2"
+},
+{
+    "name": "D3 from D3 Entrance",
+    "type": "toggle",
+    "img": "images/D3.png",
+    "codes": "d3_from_d3"
+},
+{
+    "name": "D3 from D4 Entrance",
+    "type": "toggle",
+    "img": "images/D3.png",
+    "codes": "d3_from_d4"
+},
+{
+    "name": "D3 from D5 Entrance",
+    "type": "toggle",
+    "img": "images/D3.png",
+    "codes": "d3_from_d5"
+},
+{
+    "name": "D3 from D6 Entrance",
+    "type": "toggle",
+    "img": "images/D3.png",
+    "codes": "d3_from_d6"
+},
+{
+    "name": "D3 from D7 Entrance",
+    "type": "toggle",
+    "img": "images/D3.png",
+    "codes": "d3_from_d7"
+},
+{
+    "name": "D3 from D8 Entrance",
+    "type": "toggle",
+    "img": "images/D3.png",
+    "codes": "d3_from_d8"
+},
+{
+    "name": "D4 from D1 Entrance",
+    "type": "toggle",
+    "img": "images/D4.png",
+    "codes": "d4_from_d1"
+},
+{
+    "name": "D4 from D2 Entrance",
+    "type": "toggle",
+    "img": "images/D4.png",
+    "codes": "d4_from_d2"
+},
+{
+    "name": "D4 from D3 Entrance",
+    "type": "toggle",
+    "img": "images/D4.png",
+    "codes": "d4_from_d3"
+},
+{
+    "name": "D4 from D4 Entrance",
+    "type": "toggle",
+    "img": "images/D4.png",
+    "codes": "d4_from_d4"
+},
+{
+    "name": "D4 from D5 Entrance",
+    "type": "toggle",
+    "img": "images/D4.png",
+    "codes": "d4_from_d5"
+},
+{
+    "name": "D4 from D6 Entrance",
+    "type": "toggle",
+    "img": "images/D4.png",
+    "codes": "d4_from_d6"
+},
+{
+    "name": "D4 from D7 Entrance",
+    "type": "toggle",
+    "img": "images/D4.png",
+    "codes": "d4_from_d7"
+},
+{
+    "name": "D4 from D8 Entrance",
+    "type": "toggle",
+    "img": "images/D4.png",
+    "codes": "d4_from_d8"
+},
+{
+    "name": "D5 from D1 Entrance",
+    "type": "toggle",
+    "img": "images/D5.png",
+    "codes": "d5_from_d1"
+},
+{
+    "name": "D5 from D2 Entrance",
+    "type": "toggle",
+    "img": "images/D5.png",
+    "codes": "d5_from_d2"
+},
+{
+    "name": "D5 from D3 Entrance",
+    "type": "toggle",
+    "img": "images/D5.png",
+    "codes": "d5_from_d3"
+},
+{
+    "name": "D5 from D4 Entrance",
+    "type": "toggle",
+    "img": "images/D5.png",
+    "codes": "d5_from_d4"
+},
+{
+    "name": "D5 from D5 Entrance",
+    "type": "toggle",
+    "img": "images/D5.png",
+    "codes": "d5_from_d5"
+},
+{
+    "name": "D5 from D6 Entrance",
+    "type": "toggle",
+    "img": "images/D5.png",
+    "codes": "d5_from_d6"
+},
+{
+    "name": "D5 from D7 Entrance",
+    "type": "toggle",
+    "img": "images/D5.png",
+    "codes": "d5_from_d7"
+},
+{
+    "name": "D5 from D8 Entrance",
+    "type": "toggle",
+    "img": "images/D5.png",
+    "codes": "d5_from_d8"
+},
+{
+    "name": "D6 from D1 Entrance",
+    "type": "toggle",
+    "img": "images/D6.png",
+    "codes": "d6_from_d1"
+},
+{
+    "name": "D6 from D2 Entrance",
+    "type": "toggle",
+    "img": "images/D6.png",
+    "codes": "d6_from_d2"
+},
+{
+    "name": "D6 from D3 Entrance",
+    "type": "toggle",
+    "img": "images/D6.png",
+    "codes": "d6_from_d3"
+},
+{
+    "name": "D6 from D4 Entrance",
+    "type": "toggle",
+    "img": "images/D6.png",
+    "codes": "d6_from_d4"
+},
+{
+    "name": "D6 from D5 Entrance",
+    "type": "toggle",
+    "img": "images/D6.png",
+    "codes": "d6_from_d5"
+},
+{
+    "name": "D6 from D6 Entrance",
+    "type": "toggle",
+    "img": "images/D6.png",
+    "codes": "d6_from_d6"
+},
+{
+    "name": "D6 from D7 Entrance",
+    "type": "toggle",
+    "img": "images/D6.png",
+    "codes": "d6_from_d7"
+},
+{
+    "name": "D6 from D8 Entrance",
+    "type": "toggle",
+    "img": "images/D6.png",
+    "codes": "d6_from_d8"
+},
+{
+    "name": "D7 from D1 Entrance",
+    "type": "toggle",
+    "img": "images/D7.png",
+    "codes": "d7_from_d1"
+},
+{
+    "name": "D7 from D2 Entrance",
+    "type": "toggle",
+    "img": "images/D7.png",
+    "codes": "d7_from_d2"
+},
+{
+    "name": "D7 from D3 Entrance",
+    "type": "toggle",
+    "img": "images/D7.png",
+    "codes": "d7_from_d3"
+},
+{
+    "name": "D7 from D4 Entrance",
+    "type": "toggle",
+    "img": "images/D7.png",
+    "codes": "d7_from_d4"
+},
+{
+    "name": "D7 from D5 Entrance",
+    "type": "toggle",
+    "img": "images/D7.png",
+    "codes": "d7_from_d5"
+},
+{
+    "name": "D7 from D6 Entrance",
+    "type": "toggle",
+    "img": "images/D7.png",
+    "codes": "d7_from_d6"
+},
+{
+    "name": "D7 from D7 Entrance",
+    "type": "toggle",
+    "img": "images/D7.png",
+    "codes": "d7_from_d7"
+},
+{
+    "name": "D7 from D8 Entrance",
+    "type": "toggle",
+    "img": "images/D7.png",
+    "codes": "d7_from_d8"
+},
+{
+    "name": "D8 from D1 Entrance",
+    "type": "toggle",
+    "img": "images/D8.png",
+    "codes": "d8_from_d1"
+},
+{
+    "name": "D8 from D2 Entrance",
+    "type": "toggle",
+    "img": "images/D8.png",
+    "codes": "d8_from_d2"
+},
+{
+    "name": "D8 from D3 Entrance",
+    "type": "toggle",
+    "img": "images/D8.png",
+    "codes": "d8_from_d3"
+},
+{
+    "name": "D8 from D4 Entrance",
+    "type": "toggle",
+    "img": "images/D8.png",
+    "codes": "d8_from_d4"
+},
+{
+    "name": "D8 from D5 Entrance",
+    "type": "toggle",
+    "img": "images/D8.png",
+    "codes": "d8_from_d5"
+},
+{
+    "name": "D8 from D6 Entrance",
+    "type": "toggle",
+    "img": "images/D8.png",
+    "codes": "d8_from_d6"
+},
+{
+    "name": "D8 from D7 Entrance",
+    "type": "toggle",
+    "img": "images/D8.png",
+    "codes": "d8_from_d7"
+},
+{
+    "name": "D8 from D8 Entrance",
+    "type": "toggle",
+    "img": "images/D8.png",
+    "codes": "d8_from_d8"
+}
   
 ]

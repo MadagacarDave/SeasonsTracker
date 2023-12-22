@@ -9,18 +9,102 @@
 				"name": "Western Coast",
 				"children": [
 					{
+						"name": "Check D7 Entrance",
+
+						"access_rules": [
+							"{$d7_access_normal}",
+							"{[$d7_access_normal], $d7_access_hard}"
+						],
+						"sections": [
+							{
+								"name": "D1: Gnarled Root",
+								"hosted_item": "d1_from_d7",
+								"item_count": 0,
+								"visibility_rules": [
+									"d1_ent"
+								]
+							},
+							{
+								"name": "D2: Snake's Remains",
+								"hosted_item": "d2_from_d7",
+								"item_count": 0,
+								"visibility_rules": [
+									"d2_ent"
+								]
+							},
+							{
+								"name": "D3: Poison Moth's Lair",
+								"hosted_item": "d3_from_d7",
+								"item_count": 0,
+								"visibility_rules": [
+									"d3_ent"
+								]
+							},
+							{
+								"name": "D4: Dancing Dragon",
+								"hosted_item": "d4_from_d7",
+								"item_count": 0,
+								"visibility_rules": [
+									"d4_ent"
+								]
+							},
+							{
+								"name": "D5: Unicorn's Cave",
+								"hosted_item": "d5_from_d7",
+								"item_count": 0,
+								"visibility_rules": [
+									"d5_ent"
+								]
+							},
+							{
+								"name": "D6: Ancient Ruins",
+								"hosted_item": "d6_from_d7",
+								"item_count": 0,
+								"visibility_rules": [
+									"d6_ent"
+								]
+							},
+							{
+								"name": "D7: Explorer's Crypt",
+								"hosted_item": "d7_from_d7",
+								"item_count": 0,
+								"visibility_rules": [
+									"d7_ent"
+								]
+							},
+							{
+								"name": "D8: Sword and Shield Maze",
+								"hosted_item": "d8_from_d7",
+								"item_count": 0,
+								"visibility_rules": [
+									"d8_ent"
+								]
+							}
+						],
+						"map_locations": [
+							{
+								// D7 entrance
+								"map": "holodrum",
+								"x": 25,
+								"y": 578,
+								"restrict_visibility_rules": [
+									"$check_d7_entrance_normal"
+								]
+							}
+						]
+					},
+					{
 						"name": "Explorer's Crypt",
 						"access_rules": [
 							"$d7_shuffle",
-							"[$d7_shuffle], $d7_shuffle_hard",
+							"[$d7_shuffle], $d7_shuffle_hard"
 						],
 						"sections": [
 						  {
 							"name": "Chest in \nbombable wall",
 							"access_rules": [
 								// Can get every single chest in D7
-								"$d7clear",
-								
+								"$d7clear",			
 								"bombs"
 							],
 							"item_count": 1
@@ -30,7 +114,6 @@
 							"access_rules": [
 								// Can get every single chest in D7
 								"$d7clear",
-								
 								"$kill_normal"
 							],
 							"item_count": 1
@@ -46,7 +129,7 @@
 								
 								// Accessing poe 1 is 1 key but the chest is behind 5 to avoid a key being there
 								// Therefore, show as accessible with only 1 key
-								"d7sk:1, $kill_normal",
+								"d7sk:1, $kill_normal"
 							],
 							"item_count": 1
 						  },
@@ -58,7 +141,7 @@
 								
 								"d7sk:1, bracelet, [$shoot_seeds], [emberseeds], $kill_poe, $max_jump:1",
 								"d7sk:1, bracelet, $shoot_seeds, mysteryseeds, $kill_poe, $max_jump:1, [emberseeds]",
-								"[d7sk:1], bracelet, satchel, pegasusseeds, [$kill_poe], $max_jump:1, [$shoot_seeds], [emberseeds]",
+								"[d7sk:1], bracelet, satchel, pegasusseeds, [$kill_poe], $max_jump:1, [$shoot_seeds], [emberseeds]"
 							],
 							"item_count": 1
 						  },
@@ -73,7 +156,7 @@
 								"d7sk:1, bracelet, $shoot_seeds, mysteryseeds, $kill_poe, $max_jump:2, [emberseeds]",
 								"d7sk:1, bracelet, $shoot_seeds, mysteryseeds, $kill_poe, magnet, [emberseeds]",
 								"[d7sk:1], bracelet, satchel, pegasusseeds, [$kill_poe], $max_jump:2, [$shoot_seeds], [emberseeds]",
-								"[d7sk:1], bracelet, satchel, pegasusseeds, [$kill_poe], magnet, [$shoot_seeds], [emberseeds]",
+								"[d7sk:1], bracelet, satchel, pegasusseeds, [$kill_poe], magnet, [$shoot_seeds], [emberseeds]"
 							],
 							"item_count": 1
 						  },
@@ -85,7 +168,7 @@
 								
 								"d7sk:1, bracelet, $shoot_seeds, emberseeds, $kill_poe, $max_jump:2, $kill_magunesu, magnet",
 								"d7sk:1, bracelet, $shoot_seeds, mysteryseeds, $kill_poe, $max_jump:2, $kill_magunesu, magnet, [emberseeds]",
-								"[d7sk:1], bracelet, satchel, pegasusseeds, [$kill_poe], $max_jump:2, $kill_magunesu, magnet, [$shoot_seeds], [emberseeds]",
+								"[d7sk:1], bracelet, satchel, pegasusseeds, [$kill_poe], $max_jump:2, $kill_magunesu, magnet, [$shoot_seeds], [emberseeds]"
 							],
 							"item_count": 1
 						  },
@@ -100,7 +183,7 @@
 								"d7sk:2, bracelet, $shoot_seeds, mysteryseeds, $kill_poe, $max_jump:1, [emberseeds]",
 								"d7sk:1, [d7sk:2], bracelet, $shoot_seeds, mysteryseeds, $kill_poe, $max_jump:1, [emberseeds]",
 								"d7sk:2, bracelet, satchel, pegasusseeds, [$kill_poe], $max_jump:1, [$shoot_seeds], [emberseeds]",
-								"d7sk:1, [d7sk:2], bracelet, satchel, pegasusseeds, [$kill_poe], $max_jump:1, [$shoot_seeds], [emberseeds]",
+								"d7sk:1, [d7sk:2], bracelet, satchel, pegasusseeds, [$kill_poe], $max_jump:1, [$shoot_seeds], [emberseeds]"
 							],
 							"item_count": 1
 						  },
@@ -122,7 +205,7 @@
 								"d7sk:3, bracelet, slingshot2, emberseeds, $kill_poe, flippers, $kill_darknut_across, $max_jump:1",
 								"d7sk:2, [d7sk:3], bracelet, slingshot2, emberseeds, $kill_poe, flippers, $kill_darknut_across, $max_jump:1",
 								"d7sk:3, bracelet, slingshot2, emberseeds, $kill_poe, flippers, $kill_stalfos_pit, magnet",
-								"d7sk:2, [d7sk:3], bracelet, slingshot2, emberseeds, $kill_poe, flippers, $kill_stalfos_pit, magnet",
+								"d7sk:2, [d7sk:3], bracelet, slingshot2, emberseeds, $kill_poe, flippers, $kill_stalfos_pit, magnet"
 							],
 							"item_count": 1
 						  },
@@ -140,7 +223,7 @@
 								"d7sk:4, bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3",
 								"d7sk:4, bracelet, slingshot2, emberseeds, $kill_poe, flippers, [$max_jump:3], $max_jump:2, bombs",
 								"d7sk:3, [d7sk:4], bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3",
-								"d7sk:3, [d7sk:4], bracelet, slingshot2, emberseeds, $kill_poe, flippers, [$max_jump:3], $max_jump:2, bombs",
+								"d7sk:3, [d7sk:4], bracelet, slingshot2, emberseeds, $kill_poe, flippers, [$max_jump:3], $max_jump:2, bombs"
 							],
 							"item_count": 1
 						  },
@@ -162,7 +245,7 @@
 								"d7sk:3, [d7sk:4], bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3, magnet",
 								"d7sk:3, [d7sk:4], bracelet, slingshot2, emberseeds, $kill_poe, flippers, [$max_jump:3], $max_jump:2, bombs, magnet",
 								"d7sk:4, bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:4, [magnet]",
-								"d7sk:3, [d7sk:4], bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:4, [magnet]",
+								"d7sk:3, [d7sk:4], bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:4, [magnet]"
 							],
 							"item_count": 1
 						  },
@@ -178,7 +261,7 @@
 								"d7sk:4, [d7sk:5], bracelet, $shoot_seeds, emberseeds, $kill_poe, [satchel], [pegasusseeds], flippers, [$max_jump:3], $max_jump:2, bombs",
 								
 								"d7sk:5, bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:4, [satchel], [pegasusseeds]",
-								"d7sk:4, [d7sk:5], bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:4, [satchel], [pegasusseeds]",
+								"d7sk:4, [d7sk:5], bracelet, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:4, [satchel], [pegasusseeds]"
 							],
 							"item_count": 1
 						  },
@@ -197,7 +280,7 @@
 								"d7bk, d7sk:4, bracelet, $kill_gleeok, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3",
 								"d7bk, d7sk:4, bracelet, $kill_gleeok, slingshot2, emberseeds, $kill_poe, flippers, [$max_jump:3], $max_jump:2, bombs",
 								"d7bk, d7sk:3, [d7sk:4], bracelet, $kill_gleeok, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3",
-								"d7bk, d7sk:3, [d7sk:4], bracelet, $kill_gleeok, slingshot2, emberseeds, $kill_poe, flippers, [$max_jump:3], $max_jump:2, bombs",
+								"d7bk, d7sk:3, [d7sk:4], bracelet, $kill_gleeok, slingshot2, emberseeds, $kill_poe, flippers, [$max_jump:3], $max_jump:2, bombs"
 							],
 							"item_count": 1
 						  },
@@ -215,7 +298,7 @@
 								"d7bk, d7sk:4, bracelet, $kill_gleeok, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3",
 								"d7bk, d7sk:4, bracelet, $kill_gleeok, slingshot2, emberseeds, $kill_poe, flippers, [$max_jump:3], $max_jump:2, bombs",
 								"d7bk, d7sk:3, [d7sk:4], bracelet, $kill_gleeok, slingshot2, emberseeds, $kill_poe, flippers, $max_jump:3",
-								"d7bk, d7sk:3, [d7sk:4], bracelet, $kill_gleeok, slingshot2, emberseeds, $kill_poe, flippers, [$max_jump:3], $max_jump:2, bombs",
+								"d7bk, d7sk:3, [d7sk:4], bracelet, $kill_gleeok, slingshot2, emberseeds, $kill_poe, flippers, [$max_jump:3], $max_jump:2, bombs"
 							],
 							"hosted_item": "d7",
 							"item_count": 0
@@ -229,50 +312,269 @@
 							"name": "D7 boss \nkey",
 							"hosted_item": "d7bk",
 							"item_count": 0
-						  },
+						  }
 						],
 						"map_locations": [
-						  {
-							"map": "holodrum",
-							"x": 25,
-							"y": 578
-						  }
+							{
+								"map": "holodrum",
+								"x": 281,
+								"y": 407,
+								"restrict_visibility_rules": [
+									"d7_d1"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 578,
+								"y": 364,
+								"restrict_visibility_rules": [
+									"d7_d2"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 25,
+								"y": 279,
+								"restrict_visibility_rules": [
+									"d7_d3"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 578,
+								"y": 68,
+								"restrict_visibility_rules": [
+									"d7_d4"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 449,
+								"y": 364,
+								"restrict_visibility_rules": [
+									"d7_d5"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 25,
+								"y": 25,
+								"restrict_visibility_rules": [
+									"d7_d6"
+								]
+							},
+						  	{
+								"map": "holodrum",
+								"x": 25,
+								"y": 578,
+								"restrict_visibility_rules": [
+									"d7_d7"
+								]
+						  	},
+						    {
+								"map": "subrosia",
+								"x": 12,
+								"y": 12,
+								"restrict_visibility_rules": [
+									"d7_d8"
+								]
+						    },
+						  	{
+								"map": "holodrum",
+								"x": 194,
+								"y": 25,
+								"restrict_visibility_rules": [
+									"d7_d8"
+								]
+						  	}
 						]
 					},
 					{
 						"name": "Get ember seeds in \nD7's Poe rooms",
 						"access_rules": [
 								"$d7_shuffle",
-								"[$d7_shuffle], $d7_shuffle_hard",
+								"[$d7_shuffle], $d7_shuffle_hard"
 							],
 						"sections": [
 						  {
 							"name": "Respawnable bushes",
 							"access_rules": [
-								"[emberseeds], $destroy_bush_respawn",
+								"[emberseeds], $destroy_bush_respawn"
 							],
 							"hosted_item": "emberseeds",
 							"item_count": 0
-						  },
+						  }
 						],
 						"map_locations": [
-						  {
-							"map": "holodrum",
-							"x": 40,
-							"y": 563
-						  }
+							{
+								"map": "holodrum",
+								"x": 266,
+								"y": 392,
+								"restrict_visibility_rules": [
+									"d7_d1"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 563,
+								"y": 349,
+								"restrict_visibility_rules": [
+									"d7_d2"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 40,
+								"y": 264,
+								"restrict_visibility_rules": [
+									"d7_d3"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 563,
+								"y": 53,
+								"restrict_visibility_rules": [
+									"d7_d4"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 434,
+								"y": 349,
+								"restrict_visibility_rules": [
+									"d7_d5"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 40,
+								"y": 40,
+								"restrict_visibility_rules": [
+									"d7_d6"
+								]
+							},
+						  	{
+								"map": "holodrum",
+								"x": 40,
+								"y": 563,
+								"restrict_visibility_rules": [
+									"d7_d7"
+								]
+						  	},
+						    {
+								"map": "subrosia",
+								"x": 19,
+								"y": 19,
+								"restrict_visibility_rules": [
+									"d7_d8"
+								]
+						    },
+						  	{
+								"map": "holodrum",
+								"x": 179,
+								"y": 40,
+								"restrict_visibility_rules": [
+									"d7_d8"
+								]
+						  	}
 						]
-					},
+					}
 				]
 			},	
 			{
 				"name": "North Horon",
 				"children": [
 					{
+						"name": "Check D1 Entrance",
+
+						"access_rules": [
+							"{$d1_access_normal}",
+							"{[$d1_access_normal], $d1_access_hard}"
+						],
+						"sections": [
+							{
+								"name": "D1: Gnarled Root",
+								"hosted_item": "d1_from_d1",
+								"item_count": 0,
+								"visibility_rules": [
+									"d1_ent"
+								]
+							},
+							{
+								"name": "D2: Snake's Remains",
+								"hosted_item": "d2_from_d1",
+								"item_count": 0,
+								"visibility_rules": [
+									"d2_ent"
+								]
+							},
+							{
+								"name": "D3: Poison Moth's Lair",
+								"hosted_item": "d3_from_d1",
+								"item_count": 0,
+								"visibility_rules": [
+									"d3_ent"
+								]
+							},
+							{
+								"name": "D4: Dancing Dragon",
+								"hosted_item": "d4_from_d1",
+								"item_count": 0,
+								"visibility_rules": [
+									"d4_ent"
+								]
+							},
+							{
+								"name": "D5: Unicorn's Cave",
+								"hosted_item": "d5_from_d1",
+								"item_count": 0,
+								"visibility_rules": [
+									"d5_ent"
+								]
+							},
+							{
+								"name": "D6: Ancient Ruins",
+								"hosted_item": "d6_from_d1",
+								"item_count": 0,
+								"visibility_rules": [
+									"d6_ent"
+								]
+							},
+							{
+								"name": "D7: Explorer's Crypt",
+								"hosted_item": "d7_from_d1",
+								"item_count": 0,
+								"visibility_rules": [
+									"d7_ent"
+								]
+							},
+							{
+								"name": "D8: Sword and Shield Maze",
+								"hosted_item": "d8_from_d1",
+								"item_count": 0,
+								"visibility_rules": [
+									"d8_ent"
+								]
+							}
+						],
+						"map_locations": [
+							{
+								// D1 entrance
+								"map": "holodrum",
+								"x": 281,
+								"y": 407,
+								"restrict_visibility_rules": [
+									"$check_d1_entrance_normal"
+								]
+							}
+						]
+					},
+					{
 						"name": "Gnarled Root Dungeon",
 						"access_rules": [
 							"$d1_shuffle",
-							"[$d1_shuffle], $d1_shuffle_hard",
+							"[$d1_shuffle], $d1_shuffle_hard"
 						],
 						"sections": [	
 							{
@@ -284,7 +586,7 @@
 										"$kill_stalfos",
 										"bracelet",
 										"$kill_stalfos_hard, [$kill_stalfos]",
-										"$kill_stalfos_hard, [bracelet]",
+										"$kill_stalfos_hard, [bracelet]"
 									],
 								"item_count": 1
 							},
@@ -297,7 +599,7 @@
 										"d1sk:1, $kill_stalfos",
 										"d1sk:1, bracelet",
 										"d1sk:1, $kill_stalfos_hard, [$kill_stalfos]",
-										"d1sk:1, $kill_stalfos_hard, [bracelet]",
+										"d1sk:1, $kill_stalfos_hard, [bracelet]"
 		
 									],
 								"item_count": 1
@@ -316,7 +618,7 @@
 										"d1sk:1, $kill_stalfos, $use_seeds, mysteryseeds, [emberseeds]",
 										"d1sk:1, bracelet, $use_seeds, mysteryseeds, [emberseeds]",
 										"d1sk:1, $kill_stalfos_hard, [$kill_stalfos], $use_seeds, mysteryseeds, [emberseeds]",
-										"d1sk:1, $kill_stalfos_hard, [bracelet], $use_seeds, mysteryseeds, [emberseeds]",
+										"d1sk:1, $kill_stalfos_hard, [bracelet], $use_seeds, mysteryseeds, [emberseeds]"
 									],
 								"item_count": 1
 							},
@@ -328,7 +630,7 @@
 										
 										"d1sk:1, $kill_stalfos, $kill_normal",
 										"d1sk:1, $kill_stalfos_hard, [$kill_stalfos], $kill_hard, [$kill_normal]",
-										"d1sk:1, bracelet, [$kill_stalfos], [$kill_normal]",
+										"d1sk:1, bracelet, [$kill_stalfos], [$kill_normal]"
 									],
 								"item_count": 1
 							},
@@ -341,7 +643,7 @@
 										"d1sk:1, $kill_stalfos, $use_seeds, emberseeds",
 										"d1sk:1, bracelet, $use_seeds, emberseeds",
 										"d1sk:1, $kill_stalfos_hard, [$kill_stalfos]",
-										"d1sk:1, $kill_stalfos_hard, [bracelet]",
+										"d1sk:1, $kill_stalfos_hard, [bracelet]"
 									],
 								"item_count": 1
 							},
@@ -353,7 +655,7 @@
 										
 										"d1sk:1, $kill_stalfos, $hit_lever",
 										"d1sk:1, $kill_stalfos_hard, $hit_lever, [$kill_stalfos]",
-										"d1sk:1, bracelet, [$kill_stalfos]",
+										"d1sk:1, bracelet, [$kill_stalfos]"
 									],
 								"item_count": 1
 							},
@@ -365,7 +667,7 @@
 										
 										"d1sk:1, $kill_stalfos, $hit_lever",
 										"d1sk:1, $kill_stalfos_hard, $hit_lever, [$kill_stalfos]",
-										"d1sk:1, bracelet, [$kill_stalfos]",
+										"d1sk:1, bracelet, [$kill_stalfos]"
 									],
 								"item_count": 1
 							},
@@ -387,7 +689,7 @@
 										"$d1clear",
 										
 										"$use_seeds, emberseeds",
-										"$use_seeds, mysteryseeds, [emberseeds]",
+										"$use_seeds, mysteryseeds, [emberseeds]"
 									],
 								"item_count": 1
 							},
@@ -428,21 +730,174 @@
 								"name": "D1 boss \nkey",
 								"hosted_item": "d1bk",
 								"item_count": 0
-							},	
+							}
 						],
 						"map_locations": [
 						  {
 							"map": "holodrum",
 							"x": 281,
-							"y": 407
+							"y": 407,
+							"restrict_visibility_rules": [
+								"d1_d1"
+							]
+						  },
+						  {
+							"map": "holodrum",
+							"x": 578,
+							"y": 364,
+							"restrict_visibility_rules": [
+								"d1_d2"
+							]
+						  },
+						  {
+							"map": "holodrum",
+							"x": 25,
+							"y": 279,
+							"restrict_visibility_rules": [
+								"d1_d3"
+							]
+						  },
+						  {
+							"map": "holodrum",
+							"x": 578,
+							"y": 68,
+							"restrict_visibility_rules": [
+								"d1_d4"
+							]
+						  },
+						  {
+							"map": "holodrum",
+							"x": 449,
+							"y": 364,
+							"restrict_visibility_rules": [
+								"d1_d5"
+							]
+						  },
+						  {
+							"map": "holodrum",
+							"x": 25,
+							"y": 25,
+							"restrict_visibility_rules": [
+								"d1_d6"
+							]
+						  },
+						  {
+							"map": "holodrum",
+							"x": 25,
+							"y": 578,
+							"restrict_visibility_rules": [
+								"d1_d7"
+							]
+						  },
+						  {
+							"map": "subrosia",
+							"x": 12,
+							"y": 12,
+							"restrict_visibility_rules": [
+								"d1_d8"
+							]
+						  },
+						  {
+							"map": "holodrum",
+							"x": 194,
+							"y": 25,
+							"restrict_visibility_rules": [
+								"d1_d8"
+							]
 						  }
 						]
 					},
 					{
+						"name": "Check D5 Entrance",
+
+						"access_rules": [
+							"{$d5_access_normal}",
+							"{[$d5_access_normal], $d5_access_hard}"
+						],
+						"sections": [
+							{
+								"name": "D1: Gnarled Root",
+								"hosted_item": "d1_from_d5",
+								"item_count": 0,
+								"visibility_rules": [
+									"d1_ent"
+								]
+							},
+							{
+								"name": "D2: Snake's Remains",
+								"hosted_item": "d2_from_d5",
+								"item_count": 0,
+								"visibility_rules": [
+									"d2_ent"
+								]
+							},
+							{
+								"name": "D3: Poison Moth's Lair",
+								"hosted_item": "d3_from_d5",
+								"item_count": 0,
+								"visibility_rules": [
+									"d3_ent"
+								]
+							},
+							{
+								"name": "D4: Dancing Dragon",
+								"hosted_item": "d4_from_d5",
+								"item_count": 0,
+								"visibility_rules": [
+									"d4_ent"
+								]
+							},
+							{
+								"name": "D5: Unicorn's Cave",
+								"hosted_item": "d5_from_d5",
+								"item_count": 0,
+								"visibility_rules": [
+									"d5_ent"
+								]
+							},
+							{
+								"name": "D6: Ancient Ruins",
+								"hosted_item": "d6_from_d5",
+								"item_count": 0,
+								"visibility_rules": [
+									"d6_ent"
+								]
+							},
+							{
+								"name": "D7: Explorer's Crypt",
+								"hosted_item": "d7_from_d5",
+								"item_count": 0,
+								"visibility_rules": [
+									"d7_ent"
+								]
+							},
+							{
+								"name": "D8: Sword and Shield Maze",
+								"hosted_item": "d8_from_d5",
+								"item_count": 0,
+								"visibility_rules": [
+									"d8_ent"
+								]
+							}
+						],
+						"map_locations": [
+							{
+								// D5 entrance
+								"map": "holodrum",
+								"x": 449,
+								"y": 364,
+								"restrict_visibility_rules": [
+									"$check_d5_entrance_normal"
+								]
+							}
+						]
+					},
+					
+					{
 						"name": "Unicorn's Cave",
 						"access_rules": [
 							"$d5_shuffle",
-							"[$d5_shuffle], $d5_shuffle_hard",
+							"[$d5_shuffle], $d5_shuffle_hard"
 						],
 						"sections": [
 						  {
@@ -453,7 +908,7 @@
 									
 									"$hit_lever, $max_jump:2",
 									"$hit_lever, $max_jump:1, bombs, [$max_jump:2]",
-									"$hit_lever, flippers",
+									"$hit_lever, flippers"
 								],
 							"item_count": 1
 						  },
@@ -470,7 +925,7 @@
 									"$kill_normal, $kill_gibdo, flippers, satchel, pegasusseeds, [$max_jump:1]",
 									
 									// west wing way
-									"$kill_normal, $kill_gibdo, magnet, bombs, $max_jump:1",
+									"$kill_normal, $kill_gibdo, magnet, bombs, $max_jump:1"
 								],
 							"item_count": 1
 						  },
@@ -494,7 +949,7 @@
 									"d5sk:5, magnet, bombs, $max_jump:3, [$max_jump:4]",
 									"d5sk:1, [d5sk:5], magnet, bombs, $max_jump:3, [$max_jump:4]",
 									"d5sk:5, magnet, bombs, $max_jump:1, flippers",
-									"d5sk:1, [d5sk:5], magnet, bombs, $max_jump:1, flippers",
+									"d5sk:1, [d5sk:5], magnet, bombs, $max_jump:1, flippers"
 								],
 							"item_count": 1
 						  },
@@ -505,7 +960,7 @@
 									"$d5clear",
 									
 									"$max_jump:3",
-									"magnet",
+									"magnet"
 								],
 							"item_count": 1
 						  },
@@ -516,6 +971,7 @@
 									"$d5clear",
 									
 									"$kill_moldorm, $kill_ironmask",
+									"shield"
 								],
 							"item_count": 1
 						  },
@@ -528,7 +984,7 @@
 									"magnet",
 									"$max_jump:2, bombs",
 									"$max_jump:1, bombs, [$max_jump:2]",
-									"flippers, $max_jump:1, bombs",
+									"flippers, $max_jump:1, bombs"
 								],
 							"item_count": 1
 						  },
@@ -541,7 +997,7 @@
 									"magnet, $kill_moldorm, $kill_ironmask",
 									"$max_jump:2, bombs, $kill_moldorm, $kill_ironmask",
 									"$max_jump:1, bombs, [$max_jump:2], $kill_moldorm, $kill_ironmask",
-									"flippers, $max_jump:1, bombs, $kill_moldorm, $kill_ironmask",
+									"flippers, $max_jump:1, bombs, $kill_moldorm, $kill_ironmask"
 								],
 							"item_count": 1
 						  },
@@ -554,7 +1010,7 @@
 									"$max_jump:4",
 									"$max_jump:2, magnet",
 									"$max_jump:1, bombs, [$max_jump:2], magnet",
-									"flippers, magnet",
+									"flippers, magnet"
 								],
 							"item_count": 1
 						  },
@@ -567,7 +1023,7 @@
 									"$max_jump:3",
 									"$max_jump:2, magnet",
 									"$max_jump:1, bombs, [$max_jump:2], magnet",
-									"flippers, magnet",
+									"flippers, magnet"
 								],
 							"item_count": 1
 						  },
@@ -580,7 +1036,7 @@
 									"d5sk:5, $hit_lever, $max_jump:2, magnet, $kill_syger, $kill_darknut, $kill_magunesu",
 									"d5sk:3, [d5sk:5], $hit_lever, $max_jump:2, magnet, $kill_syger, $kill_darknut, $kill_magunesu",
 									"d5sk:5, $hit_lever, flippers, magnet, $kill_syger, $kill_darknut, $kill_magunesu",
-									"d5sk:3, [d5sk:5], $hit_lever, flippers, magnet, $kill_syger, $kill_darknut, $kill_magunesu",
+									"d5sk:3, [d5sk:5], $hit_lever, flippers, magnet, $kill_syger, $kill_darknut, $kill_magunesu"
 								],
 							"item_count": 1
 						  },
@@ -594,7 +1050,7 @@
 									"d5bk, d5sk:5, $max_jump:2, magnet, $kill_syger",
 									"d5bk, d5sk:2, [d5sk:5], $max_jump:2, magnet, $kill_syger",
 									"d5bk, d5sk:5, $max_jump:1, flippers, magnet, $kill_syger",
-									"d5bk, d5sk:2, [d5sk:5], $max_jump:1, flippers, magnet, $kill_syger",
+									"d5bk, d5sk:2, [d5sk:5], $max_jump:1, flippers, magnet, $kill_syger"
 								],
 							"item_count": 1
 						  },
@@ -607,7 +1063,7 @@
 									"d5bk, d5sk:5, $max_jump:2, magnet, $kill_syger",
 									"d5bk, d5sk:2, [d5sk:5], $max_jump:2, magnet, $kill_syger",
 									"d5bk, d5sk:5, $max_jump:1, flippers, magnet, $kill_syger",
-									"d5bk, d5sk:2, [d5sk:5], $max_jump:1, flippers, magnet, $kill_syger",
+									"d5bk, d5sk:2, [d5sk:5], $max_jump:1, flippers, magnet, $kill_syger"
 								],
 							"hosted_item": "d5",
 							"item_count": 0
@@ -621,21 +1077,88 @@
 							"name": "D5 boss \nkey",
 							"hosted_item": "d5bk",
 							"item_count": 0
-						  },
+						  }
 						],
 						"map_locations": [
-						  {
-							"map": "holodrum",
-							"x": 449,
-							"y": 364
-						  }
+							{
+								"map": "holodrum",
+								"x": 281,
+								"y": 407,
+								"restrict_visibility_rules": [
+									"d5_d1"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 578,
+								"y": 364,
+								"restrict_visibility_rules": [
+									"d5_d2"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 25,
+								"y": 279,
+								"restrict_visibility_rules": [
+									"d5_d3"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 578,
+								"y": 68,
+								"restrict_visibility_rules": [
+									"d5_d4"
+								]
+							},
+						    {
+								"map": "holodrum",
+								"x": 449,
+								"y": 364,
+								"restrict_visibility_rules": [
+									"d5_d5"
+								]
+						    },
+						    {
+								"map": "holodrum",
+								"x": 25,
+								"y": 25,
+								"restrict_visibility_rules": [
+									"d5_d6"
+								]
+						  	},
+						  	{
+								"map": "holodrum",
+								"x": 25,
+								"y": 578,
+								"restrict_visibility_rules": [
+									"d5_d7"
+								]
+						  	},
+						  	{
+								"map": "subrosia",
+								"x": 12,
+								"y": 12,
+								"restrict_visibility_rules": [
+									"d5_d8"
+								]
+						  	},
+						  	{
+								"map": "holodrum",
+								"x": 194,
+								"y": 25,
+								"restrict_visibility_rules": [
+									"d5_d8"
+								]
+						  	}
 						]
 					},
 					{
 						"name": "Get ember seeds in \nD5's Armos room",
 						"access_rules": [
 								"$d5_shuffle",
-								"[$d5_shuffle], $d5_shuffle_hard",
+								"[$d5_shuffle], $d5_shuffle_hard"
 							],
 						"sections": [
 						  {
@@ -644,20 +1167,87 @@
 								"[emberseeds], magnet, $kill_ironmask, $kill_moldorm, $kill_armos",
 								"[emberseeds], $max_jump:2, bombs",
 								"[emberseeds], $max_jump:1, bombs, [$max_jump:2]",
-								"[emberseeds], flippers, $max_jump:1, bombs",
+								"[emberseeds], flippers, $max_jump:1, bombs"
 							],
 							"hosted_item": "emberseeds",
 							"item_count": 0
-						  },
+						  }
 						],
 						"map_locations": [
-						  {
-							"map": "holodrum",
-							"x": 435,
-							"y": 350
-						  }
+							{
+								"map": "holodrum",
+								"x": 266,
+								"y": 392,
+								"restrict_visibility_rules": [
+									"d5_d1"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 563,
+								"y": 349,
+								"restrict_visibility_rules": [
+									"d5_d2"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 40,
+								"y": 264,
+								"restrict_visibility_rules": [
+									"d5_d3"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 563,
+								"y": 53,
+								"restrict_visibility_rules": [
+									"d5_d4"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 434,
+								"y": 349,
+								"restrict_visibility_rules": [
+									"d5_d5"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 40,
+								"y": 40,
+								"restrict_visibility_rules": [
+									"d5_d6"
+								]
+							},
+						  	{
+								"map": "holodrum",
+								"x": 40,
+								"y": 563,
+								"restrict_visibility_rules": [
+									"d5_d7"
+								]
+						  	},
+						    {
+								"map": "subrosia",
+								"x": 19,
+								"y": 19,
+								"restrict_visibility_rules": [
+									"d5_d8"
+								]
+						    },
+						  	{
+								"map": "holodrum",
+								"x": 179,
+								"y": 40,
+								"restrict_visibility_rules": [
+									"d5_d8"
+								]
+						  	}
 						]
-					},
+					}
 				]
 			},
 			{
@@ -672,14 +1262,14 @@
 							
 							"$sunken_city, $natzu_to_suburbs, $fountain_to_D2",
 							"$scent_tree_hard, $natzu_to_moblin_hard, $moblin_keep_to_sunken, $natzu_to_suburbs, $fountain_to_D2",
-							"$mount_cucco, flippers, $cucco_to_sunken, $natzu_to_suburbs, $fountain_to_D2",
+							"$mount_cucco, flippers, $cucco_to_sunken, $natzu_to_suburbs, $fountain_to_D2"
 						],
 						"sections": [
 						  {
 							"name": "Lone chest",
 							"access_rules": [
 								"$ricky, bracelet",
-								"wow_summer, bracelet",
+								"wow_summer, bracelet"
 							],
 							"item_count": 1
 						  },
@@ -693,10 +1283,10 @@
 								"fall, $ricky, $destroy_mushroom, magnet",
 								"fall, wow_summer, $destroy_mushroom, magnet",
 								"fall, $ricky, $destroy_mushroom, $max_jump:3",
-								"fall, wow_summer, $destroy_mushroom, $max_jump:3",
+								"fall, wow_summer, $destroy_mushroom, $max_jump:3"
 							],
 							"item_count": 1
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
@@ -706,12 +1296,97 @@
 						  }
 						]
 					},
+					{
+						"name": "Check D2 Entrance",
+
+						"access_rules": [
+							"{$d2_access_normal}",
+							"{[$d2_access_normal], $d2_access_hard}"
+						],
+						"sections": [
+							{
+								"name": "D1: Gnarled Root",
+								"hosted_item": "d1_from_d2",
+								"item_count": 0,
+								"visibility_rules": [
+									"d1_ent"
+								]
+							},
+							{
+								"name": "D2: Snake's Remains",
+								"hosted_item": "d2_from_d2",
+								"item_count": 0,
+								"visibility_rules": [
+									"d2_ent"
+								]
+							},
+							{
+								"name": "D3: Poison Moth's Lair",
+								"hosted_item": "d3_from_d2",
+								"item_count": 0,
+								"visibility_rules": [
+									"d3_ent"
+								]
+							},
+							{
+								"name": "D4: Dancing Dragon",
+								"hosted_item": "d4_from_d2",
+								"item_count": 0,
+								"visibility_rules": [
+									"d4_ent"
+								]
+							},
+							{
+								"name": "D5: Unicorn's Cave",
+								"hosted_item": "d5_from_d2",
+								"item_count": 0,
+								"visibility_rules": [
+									"d5_ent"
+								]
+							},
+							{
+								"name": "D6: Ancient Ruins",
+								"hosted_item": "d6_from_d2",
+								"item_count": 0,
+								"visibility_rules": [
+									"d6_ent"
+								]
+							},
+							{
+								"name": "D7: Explorer's Crypt",
+								"hosted_item": "d7_from_d2",
+								"item_count": 0,
+								"visibility_rules": [
+									"d7_ent"
+								]
+							},
+							{
+								"name": "D8: Sword and Shield Maze",
+								"hosted_item": "d8_from_d2",
+								"item_count": 0,
+								"visibility_rules": [
+									"d8_ent"
+								]
+							}
+						],
+						"map_locations": [
+							{
+								// D2 entrance
+								"map": "holodrum",
+								"x": 578,
+								"y": 364,
+								"restrict_visibility_rules": [
+									"$check_d2_entrance_normal"
+								]
+							}
+						]
+					},
 					
 					{
 						"name": "Snake's Remains",
 						"access_rules": [
 							"$d2_shuffle",
-							"[$d2_shuffle], $d2_shuffle_hard",
+							"[$d2_shuffle], $d2_shuffle_hard"
 						],
 						"sections": [
 						  {
@@ -725,7 +1400,7 @@
 								"$d2clear",
 								
 								"$d2_A, $kill_normal",
-								"$d2_B, $kill_normal, bracelet",
+								"$d2_B, $kill_normal, bracelet"
 							],
 							"item_count": 1
 						  },
@@ -737,7 +1412,7 @@
 								
 								"$d2_A, $kill_normal, $use_seeds, emberseeds",
 								"$d2_A, $kill_normal, $use_seeds, mysteryseeds, [emberseeds]",
-								"$d2_B, $kill_normal, bracelet",
+								"$d2_B, $kill_normal, bracelet"
 							],
 							"item_count": 1
 						  },
@@ -752,7 +1427,7 @@
 								"d2sk:3, $d2_A, $kill_normal, $use_seeds, mysteryseeds, [emberseeds], $destroy_pot",
 								"d2sk:1, [d2sk:3], $d2_A, $kill_normal, $use_seeds, mysteryseeds, [emberseeds], $destroy_pot",
 								"d2sk:3, $d2_B, bracelet, $destroy_pot",
-								"d2sk:1, [d2sk:3], $d2_B, bracelet, $destroy_pot",
+								"d2sk:1, [d2sk:3], $d2_B, bracelet, $destroy_pot"
 							],
 							"item_count": 1
 						  },
@@ -771,7 +1446,7 @@
 								"d2sk:3, $d2_A, $kill_rope, $use_seeds, mysteryseeds, [emberseeds], bracelet, [$kill_hardhat_pit], [$kill_moblin_pit]",
 								"d2sk:1, [d2sk:3], $d2_A, $kill_rope, $use_seeds, mysteryseeds, [emberseeds], bracelet, [$kill_hardhat_pit], [$kill_moblin_pit]",
 								"d2sk:3, $d2_B, bracelet, $destroy_pot, [$kill_hardhat_pit], [$kill_moblin_pit]",
-								"d2sk:1, [d2sk:3], $d2_B, bracelet, $destroy_pot, [$kill_hardhat_pit], [$kill_moblin_pit]",
+								"d2sk:1, [d2sk:3], $d2_B, bracelet, $destroy_pot, [$kill_hardhat_pit], [$kill_moblin_pit]"
 							],
 							"item_count": 1
 						  },
@@ -783,7 +1458,7 @@
 								
 								"$d2_A, $use_seeds, emberseeds, $kill_normal",
 								"$d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_normal",
-								"$d2_B, bracelet",
+								"$d2_B, bracelet"
 							],
 							"item_count": 1
 						  },
@@ -795,7 +1470,7 @@
 								
 								"$d2_A, $use_seeds, emberseeds, $kill_normal, bracelet, bombs",
 								"$d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_normal, bracelet, bombs",
-								"$d2_B, bracelet, bombs",
+								"$d2_B, bracelet, bombs"
 							],
 							"item_count": 1
 						  },
@@ -807,7 +1482,7 @@
 								
 								"$d2_A, $use_seeds, emberseeds, $kill_normal, bracelet, bombs",
 								"$d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_normal, bracelet, bombs",
-								"$d2_B, bracelet, bombs",
+								"$d2_B, bracelet, bombs"
 							],
 							"item_count": 1
 						  },
@@ -819,7 +1494,7 @@
 								
 								"d2sk:2, $d2_A, $use_seeds, emberseeds, $kill_normal, bracelet, bombs",
 								"d2sk:2, $d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_normal, bracelet, bombs",
-								"d2sk:2, $d2_B, bracelet, bombs",
+								"d2sk:2, $d2_B, bracelet, bombs"
 							],
 							"item_count": 1
 						  },
@@ -835,7 +1510,7 @@
 								"d2bk, d2sk:2, $d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_normal, bracelet, bombs",
 								"d2bk, d2sk:1, [d2sk:2], $d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_normal, bracelet, bombs",
 								"d2bk, d2sk:2, $d2_B, bracelet, bombs",
-								"d2bk, d2sk:1, [d2sk:2], $d2_B, bracelet, bombs",
+								"d2bk, d2sk:1, [d2sk:2], $d2_B, bracelet, bombs"
 							],
 							"item_count": 1
 						  },
@@ -850,7 +1525,7 @@
 								"d2bk, d2sk:2, $d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_normal, bracelet, bombs",
 								"d2bk, d2sk:1, [d2sk:2], $d2_A, $use_seeds, mysteryseeds, [emberseeds], $kill_normal, bracelet, bombs",
 								"d2bk, d2sk:2, $d2_B, bracelet, bombs",
-								"d2bk, d2sk:1, [d2sk:2], $d2_B, bracelet, bombs",
+								"d2bk, d2sk:1, [d2sk:2], $d2_B, bracelet, bombs"
 							],
 							"hosted_item": "d2",
 							"item_count": 0
@@ -864,14 +1539,82 @@
 							"name": "D2 boss \nkey",
 							"hosted_item": "d2bk",
 							"item_count": 0
-						  },
+						  }
 						],
 						"map_locations": [
 						  {
 							"map": "holodrum",
+							"x": 281,
+							"y": 407,
+							"restrict_visibility_rules": [
+								"d2_d1"
+							]
+						  },
+						  {
+							"map": "holodrum",
 							"x": 578,
-							"y": 364
-						  }
+							"y": 364,
+							"restrict_visibility_rules": [
+								"d2_d2"
+							]
+						  },
+						  {
+							"map": "holodrum",
+							"x": 25,
+							"y": 279,
+							"restrict_visibility_rules": [
+								"d2_d3"
+							]
+						  },
+						{
+							"map": "holodrum",
+							"x": 578,
+							"y": 68,
+							"restrict_visibility_rules": [
+								"d2_d4"
+							]
+						  },
+					  {
+						"map": "holodrum",
+						"x": 449,
+						"y": 364,
+						"restrict_visibility_rules": [
+							"d2_d5"
+						]
+					  },
+					  {
+						"map": "holodrum",
+						"x": 25,
+						"y": 25,
+						"restrict_visibility_rules": [
+							"d2_d6"
+						]
+					  },
+					  {
+						"map": "holodrum",
+						"x": 25,
+						"y": 578,
+						"restrict_visibility_rules": [
+							"d2_d7"
+						]
+					  },
+					  {
+						"map": "subrosia",
+						"x": 12,
+						"y": 12,
+						"restrict_visibility_rules": [
+							"d2_d8"
+						]
+					  },
+					  {
+						"map": "holodrum",
+						"x": 194,
+						"y": 25,
+						"restrict_visibility_rules": [
+							"d2_d8"
+						]
+					  }
+						  
 						]
 					},
 					{
@@ -885,30 +1628,182 @@
 							"access_rules": [
 								"[bombs], $destroy_bush_respawn, $d2_A, $kill_rope, $use_seeds, emberseeds, $kill_hardhat_pit",
 								"[bombs], $destroy_bush_respawn, $d2_A, $kill_rope, $use_seeds, mysteryseeds, [emberseeds], $kill_hardhat_pit",
-								"[bombs], $destroy_bush_respawn, $d2_B, bracelet, $destroy_pot, $kill_hardhat_pit",
+								"[bombs], $destroy_bush_respawn, $d2_B, bracelet, $destroy_pot, $kill_hardhat_pit"
 							],
 							"hosted_item": "bombs",
 							"item_count": 0
-						  },
+						  }
 						],
 						"map_locations": [
-						  {
-							"map": "holodrum",
-							"x": 564,
-							"y": 350
-						  }
+							{
+								"map": "holodrum",
+								"x": 266,
+								"y": 392,
+								"restrict_visibility_rules": [
+									"d2_d1"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 563,
+								"y": 349,
+								"restrict_visibility_rules": [
+									"d2_d2"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 40,
+								"y": 264,
+								"restrict_visibility_rules": [
+									"d2_d3"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 563,
+								"y": 53,
+								"restrict_visibility_rules": [
+									"d2_d4"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 434,
+								"y": 349,
+								"restrict_visibility_rules": [
+									"d2_d5"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 40,
+								"y": 40,
+								"restrict_visibility_rules": [
+									"d2_d6"
+								]
+							},
+						  	{
+								"map": "holodrum",
+								"x": 40,
+								"y": 563,
+								"restrict_visibility_rules": [
+									"d2_d7"
+								]
+						  	},
+						    {
+								"map": "subrosia",
+								"x": 19,
+								"y": 19,
+								"restrict_visibility_rules": [
+									"d2_d8"
+								]
+						    },
+						  	{
+								"map": "holodrum",
+								"x": 179,
+								"y": 40,
+								"restrict_visibility_rules": [
+									"d2_d8"
+								]
+						  	}
 						]
-					},
+					}
 				]
 			},
 			{
 				"name": "Spool Swamp",
 				"children": [
 					{
+						"name": "Check D3 Entrance",
+
+						"access_rules": [
+							"{$d3_access_normal}",
+							"{[$d3_access_normal], $d3_access_hard}"
+						],
+						"sections": [
+							{
+								"name": "D1: Gnarled Root",
+								"hosted_item": "d1_from_d3",
+								"item_count": 0,
+								"visibility_rules": [
+									"d1_ent"
+								]
+							},
+							{
+								"name": "D2: Snake's Remains",
+								"hosted_item": "d2_from_d3",
+								"item_count": 0,
+								"visibility_rules": [
+									"d2_ent"
+								]
+							},
+							{
+								"name": "D3: Poison Moth's Lair",
+								"hosted_item": "d3_from_d3",
+								"item_count": 0,
+								"visibility_rules": [
+									"d3_ent"
+								]
+							},
+							{
+								"name": "D4: Dancing Dragon",
+								"hosted_item": "d4_from_d3",
+								"item_count": 0,
+								"visibility_rules": [
+									"d4_ent"
+								]
+							},
+							{
+								"name": "D5: Unicorn's Cave",
+								"hosted_item": "d5_from_d3",
+								"item_count": 0,
+								"visibility_rules": [
+									"d5_ent"
+								]
+							},
+							{
+								"name": "D6: Ancient Ruins",
+								"hosted_item": "d6_from_d3",
+								"item_count": 0,
+								"visibility_rules": [
+									"d6_ent"
+								]
+							},
+							{
+								"name": "D7: Explorer's Crypt",
+								"hosted_item": "d7_from_d3",
+								"item_count": 0,
+								"visibility_rules": [
+									"d7_ent"
+								]
+							},
+							{
+								"name": "D8: Sword and Shield Maze",
+								"hosted_item": "d8_from_d3",
+								"item_count": 0,
+								"visibility_rules": [
+									"d8_ent"
+								]
+							}
+						],
+						"map_locations": [
+							{
+								// D3 entrance
+								"map": "holodrum",
+								"x": 25,
+								"y": 279,
+								"restrict_visibility_rules": [
+									"$check_d3_entrance_normal"
+								]
+							}
+						]
+					},
+					{
 						"name": "Poison Moth's Lair",
 						"access_rules": [
 							"$d3_shuffle",
-							"[$d3_shuffle], $d3_shuffle_hard",
+							"[$d3_shuffle], $d3_shuffle_hard"
 						],
 						"sections": [
 						  {
@@ -917,9 +1812,7 @@
 								// Can get every single chest in D3
 								"$d3clear",
 								
-								"$kill_beetle, bracelet",
-								"bracelet, shovel",
-								"bracelet, shield1",
+								"$kill_beetle, bracelet"
 							],
 							"item_count": 1
 						  },
@@ -929,9 +1822,8 @@
 								// Can get every single chest in D3
 								"$d3clear",
 								
-								"$kill_beetle, $kill_moldorm",
-								"bracelet, shovel, $kill_moldorm",
-								"bracelet, shield1, $kill_moldorm",
+								"$kill_beetle, $kill_moldorm, bracelet",
+								"$kill_beetle, $kill_moldorm, $max_jump:1"
 							],
 							"item_count": 1
 						  },
@@ -941,9 +1833,8 @@
 								// Can get every single chest in D3
 								"$d3clear",
 								
-								"$kill_beetle, bombs",
-								"bracelet, shovel, bombs",
-								"bracelet, shield1, bombs",
+								"$kill_beetle, bombs, bracelet",
+								"$kill_beetle, bombs, $max_jump:1"
 							],
 							"item_count": 1
 						  },
@@ -953,12 +1844,10 @@
 								// Can get every single chest in D3
 								"$d3clear",
 								
-								"d3sk:2, $kill_beetle, $kill_mimic",
-								"d3sk:1, [d3sk:2], $kill_beetle, $kill_mimic",
-								"d3sk:2, shovel, bracelet, $kill_mimic",
-								"d3sk:1, [d3sk:2], shovel, bracelet, $kill_mimic",
-								"d3sk:2, shield1, bracelet, $kill_mimic",
-								"d3sk:1, [d3sk:2], shield1, bracelet, $kill_mimic",
+								"d3sk:2, $kill_beetle, $kill_mimic, $max_jump:1",
+								"d3sk:1, [d3sk:2], $kill_beetle, $kill_mimic, $max_jump:1",
+								"d3sk:2, $kill_beetle, $kill_mimic, bracelet",
+								"d3sk:1, [d3sk:2], $kill_beetle, $kill_mimic, bracelet"
 							],
 							"item_count": 1
 						  },
@@ -969,9 +1858,7 @@
 								"$d3clear",
 								
 								"$kill_beetle, bracelet",
-								"shovel, bracelet",
-								"shield1, bracelet",
-								"$kill_beetle, $max_jump:1",
+								"$kill_beetle, $max_jump:1"
 							],
 							"item_count": 1
 						  },
@@ -981,9 +1868,7 @@
 								// Can get every single chest in D3
 								"$d3clear",
 								
-								"$kill_beetle, $max_jump:1",
-								"bracelet, shovel, $max_jump:1",
-								"bracelet, shield1, $max_jump:1",
+								"$kill_beetle, $max_jump:1"
 							],
 							"item_count": 1
 						  },
@@ -993,9 +1878,7 @@
 								// Can get every single chest in D3
 								"$d3clear",
 								
-								"$kill_beetle, $max_jump:1",
-								"bracelet, shovel, $max_jump:1",
-								"bracelet, shield1, $max_jump:1",
+								"$kill_beetle, $max_jump:1"
 							],
 							"item_count": 1
 						  },
@@ -1005,9 +1888,7 @@
 								// Can get every single chest in D3
 								"$d3clear",
 								
-								"$kill_beetle, $max_jump:1",
-								"bracelet, shovel, $max_jump:1",
-								"bracelet, shield1, $max_jump:1",
+								"$kill_beetle, $max_jump:1"
 							],
 							"item_count": 1
 						  },
@@ -1018,11 +1899,7 @@
 								"$d3clear",
 								
 								"d3sk:2, $kill_beetle, $kill_omuai, $max_jump:1",
-								"d3sk:1, [d3sk:2], $kill_beetle, $kill_omuai, $max_jump:1",
-								"d3sk:2, shovel, $kill_omuai, $max_jump:1",
-								"d3sk:1, [d3sk:2], shovel, $kill_omuai, $max_jump:1",
-								"d3sk:2, shield1, $kill_omuai, $max_jump:1",
-								"d3sk:1, [d3sk:2], shield1, $kill_omuai, $max_jump:1",
+								"d3sk:1, [d3sk:2], $kill_beetle, $kill_omuai, $max_jump:1"
 							],
 							"item_count": 1
 						  },
@@ -1034,11 +1911,7 @@
 								"$d3clear",
 								
 								"d3bk, d3sk:2, $kill_beetle, $kill_omuai, $max_jump:1, $kill_mothula",
-								"d3bk, d3sk:1, [d3sk:2], $kill_beetle, $kill_omuai, $max_jump:1, $kill_mothula",
-								"d3bk, d3sk:2, shovel, $kill_omuai, $max_jump:1, $kill_mothula",
-								"d3bk, d3sk:1, [d3sk:2], shovel, $kill_omuai, $max_jump:1, $kill_mothula",
-								"d3bk, d3sk:2, shield1, $kill_omuai, $max_jump:1, $kill_mothula",
-								"d3bk, d3sk:1, [d3sk:2], shield1, $kill_omuai, $max_jump:1, $kill_mothula",
+								"d3bk, d3sk:1, [d3sk:2], $kill_beetle, $kill_omuai, $max_jump:1, $kill_mothula"
 							],
 							"item_count": 1
 						  },
@@ -1049,11 +1922,7 @@
 								"$d3clear",
 								
 								"d3bk, d3sk:2, $kill_beetle, $kill_omuai, $max_jump:1, $kill_mothula",
-								"d3bk, d3sk:1, [d3sk:2], $kill_beetle, $kill_omuai, $max_jump:1, $kill_mothula",
-								"d3bk, d3sk:2, shovel, $kill_omuai, $max_jump:1, $kill_mothula",
-								"d3bk, d3sk:1, [d3sk:2], shovel, $kill_omuai, $max_jump:1, $kill_mothula",
-								"d3bk, d3sk:2, shield1, $kill_omuai, $max_jump:1, $kill_mothula",
-								"d3bk, d3sk:1, [d3sk:2], shield1, $kill_omuai, $max_jump:1, $kill_mothula",
+								"d3bk, d3sk:1, [d3sk:2], $kill_beetle, $kill_omuai, $max_jump:1, $kill_mothula"
 							],
 							"hosted_item": "d3",
 							"item_count": 0
@@ -1067,17 +1936,91 @@
 							"name": "D3 boss \nkey",
 							"hosted_item": "d3bk",
 							"item_count": 0
-						  },
-						  
+						  }	  
 						],
 						"map_locations": [
-						  {
-							"map": "holodrum",
-							"x": 25,
-							"y": 279
-						  }
+							{
+								"map": "holodrum",
+								"x": 281,
+								"y": 407,
+								"restrict_visibility_rules": [
+									"d3_d1"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 578,
+								"y": 364,
+								"restrict_visibility_rules": [
+									"d3_d2"
+								]
+							},
+						  	{
+								"map": "holodrum",
+								"x": 25,
+								"y": 279,
+						  		"restrict_visibility_rules": [
+									"d3_d3"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 578,
+								"y": 68,
+								"restrict_visibility_rules": [
+									"d3_d4"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 449,
+								"y": 364,
+								"restrict_visibility_rules": [
+									"d3_d5"
+								]
+							},
+						  	{
+								"map": "holodrum",
+								"x": 449,
+								"y": 364,
+								"restrict_visibility_rules": [
+									"d3_d5"
+								]
+						  	},
+							{
+								"map": "holodrum",
+								"x": 25,
+								"y": 25,
+								"restrict_visibility_rules": [
+									"d3_d6"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 25,
+								"y": 578,
+								"restrict_visibility_rules": [
+									"d3_d7"
+								]
+							},
+							{
+								"map": "subrosia",
+								"x": 12,
+								"y": 12,
+								"restrict_visibility_rules": [
+									"d3_d8"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 194,
+								"y": 25,
+								"restrict_visibility_rules": [
+									"d3_d8"
+								]
+							}
 						]
-					},
+					}
 				]
 			},
 			{
@@ -1086,10 +2029,95 @@
 				],
 				"children": [
 					{
+						"name": "Check D4 Entrance",
+
+						"access_rules": [
+							"{$d4_access_normal}",
+							"{[$d4_access_normal], $d4_access_hard}"
+						],
+						"sections": [
+							{
+								"name": "D1: Gnarled Root",
+								"hosted_item": "d1_from_d4",
+								"item_count": 0,
+								"visibility_rules": [
+									"d1_ent"
+								]
+							},
+							{
+								"name": "D2: Snake's Remains",
+								"hosted_item": "d2_from_d4",
+								"item_count": 0,
+								"visibility_rules": [
+									"d2_ent"
+								]
+							},
+							{
+								"name": "D3: Poison Moth's Lair",
+								"hosted_item": "d3_from_d4",
+								"item_count": 0,
+								"visibility_rules": [
+									"d3_ent"
+								]
+							},
+							{
+								"name": "D4: Dancing Dragon",
+								"hosted_item": "d4_from_d4",
+								"item_count": 0,
+								"visibility_rules": [
+									"d4_ent"
+								]
+							},
+							{
+								"name": "D5: Unicorn's Cave",
+								"hosted_item": "d5_from_d4",
+								"item_count": 0,
+								"visibility_rules": [
+									"d5_ent"
+								]
+							},
+							{
+								"name": "D6: Ancient Ruins",
+								"hosted_item": "d6_from_d4",
+								"item_count": 0,
+								"visibility_rules": [
+									"d6_ent"
+								]
+							},
+							{
+								"name": "D7: Explorer's Crypt",
+								"hosted_item": "d7_from_d4",
+								"item_count": 0,
+								"visibility_rules": [
+									"d7_ent"
+								]
+							},
+							{
+								"name": "D8: Sword and Shield Maze",
+								"hosted_item": "d8_from_d4",
+								"item_count": 0,
+								"visibility_rules": [
+									"d8_ent"
+								]
+							}
+						],
+						"map_locations": [
+							{
+								// D4 entrance
+								"map": "holodrum",
+								"x": 578,
+								"y": 68,
+								"restrict_visibility_rules": [
+									"$check_d4_entrance_normal"
+								]
+							}
+						]
+					},
+					{
 						"name": "Dancing Dragon Dungeon",
 						"access_rules": [
 								"$d4_shuffle",
-								"[$d4_shuffle], $d4_shuffle_hard",
+								"[$d4_shuffle], $d4_shuffle_hard"
 							],
 						"sections": [
 						  {
@@ -1099,7 +2127,7 @@
 								"$d4clear",
 								
 								"flippers",
-								"$max_jump:4",
+								"$max_jump:4"
 							],
 							"item_count": 1
 						  },
@@ -1110,7 +2138,7 @@
 								"$d4clear",
 								
 								"flippers, bombs, bracelet",
-								"$max_jump:4, bombs, bracelet",
+								"$max_jump:4, bombs, bracelet"
 							],
 							"item_count": 1
 						  },
@@ -1121,7 +2149,7 @@
 								"$d4clear",
 								
 								"flippers, $hit_lever",
-								"$max_jump:4, $hit_lever",
+								"$max_jump:4, $hit_lever"
 							],
 							"item_count": 1
 						  },
@@ -1132,7 +2160,7 @@
 								"$d4clear",
 								
 								"flippers, $hit_lever, $max_jump:1",
-								"$max_jump:4, $hit_lever",
+								"$max_jump:4, $hit_lever"
 							],
 							"item_count": 1
 						  },
@@ -1143,7 +2171,7 @@
 								"$d4clear",
 								
 								"d4sk:1, flippers, $max_jump:1, bombs",
-								"d4sk:1, $max_jump:4, bombs",
+								"d4sk:1, $max_jump:4, bombs"
 							],
 							"item_count": 1
 						  },
@@ -1154,7 +2182,7 @@
 								"$d4clear",
 								
 								"d4sk:1, flippers, $max_jump:1, $hit_lever, $kill_normal",
-								"d4sk:1, flippers, $max_jump:1, $hit_lever, bracelet",
+								"d4sk:1, flippers, $max_jump:1, $hit_lever, bracelet"
 							],
 							"item_count": 1
 						  },
@@ -1165,7 +2193,7 @@
 								"$d4clear",
 								
 								"d4sk:2, flippers, $max_jump:1, $hit_lever, $kill_shroudedstalfos",
-								"d4sk:2, flippers, $max_jump:1, $hit_lever, bracelet",
+								"d4sk:2, flippers, $max_jump:1, $hit_lever, bracelet"
 							],
 							"item_count": 1
 						  },
@@ -1178,7 +2206,7 @@
 								"d4sk:2, flippers, $max_jump:1, $kill_shroudedstalfos, $shoot_seeds, emberseeds",
 								"d4sk:2, flippers, $max_jump:1, $kill_shroudedstalfos, $shoot_seeds, mysteryseeds, [emberseeds]",
 								"d4sk:2, flippers, $max_jump:1, bracelet, $shoot_seeds, emberseeds",
-								"d4sk:2, flippers, $max_jump:1, bracelet, $shoot_seeds, mysteryseeds, [emberseeds]",
+								"d4sk:2, flippers, $max_jump:1, bracelet, $shoot_seeds, mysteryseeds, [emberseeds]"
 							],
 							"item_count": 1
 						  },
@@ -1191,7 +2219,7 @@
 								"d4sk:5, flippers, $max_jump:1, $kill_shroudedstalfos, $kill_agunima",
 								"d4sk:3, [d4sk:5], flippers, $max_jump:1, $kill_shroudedstalfos, $kill_agunima",
 								"d4sk:5, flippers, $max_jump:1, bracelet, $kill_agunima",
-								"d4sk:3, [d4sk:5], flippers, $max_jump:1, bracelet, $kill_agunima",
+								"d4sk:3, [d4sk:5], flippers, $max_jump:1, bracelet, $kill_agunima"
 							],
 							"item_count": 1
 						  },
@@ -1204,7 +2232,7 @@
 								"d4sk:5, flippers, $max_jump:1, $kill_shroudedstalfos, $kill_agunima, $hit_far_lever",
 								"d4sk:3, [d4sk:5], flippers, $max_jump:1, $kill_shroudedstalfos, $kill_agunima, $hit_far_lever",
 								"d4sk:5, flippers, $max_jump:1, bracelet, $kill_agunima, $hit_far_lever",
-								"d4sk:3, [d4sk:5], flippers, $max_jump:1, bracelet, $kill_agunima, $hit_far_lever",
+								"d4sk:3, [d4sk:5], flippers, $max_jump:1, bracelet, $kill_agunima, $hit_far_lever"
 							],
 							"item_count": 1
 						  },
@@ -1226,7 +2254,7 @@
 								"d4bk, d4sk:5, flippers, $max_jump:2, bombs, $hit_lever, $kill_shroudedstalfos, $kill_normal, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $kill_gohma",
 								"d4bk, d4sk:3, [d4sk:5], flippers, $max_jump:2, bombs, $hit_lever, $kill_shroudedstalfos, $kill_normal, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $kill_gohma",
 								"d4bk, d4sk:5, flippers, $max_jump:2, bombs, $hit_lever, bracelet, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $kill_gohma",
-								"d4bk, d4sk:3, [d4sk:5], flippers, $max_jump:2, bombs, $hit_lever, bracelet, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $kill_gohma",
+								"d4bk, d4sk:3, [d4sk:5], flippers, $max_jump:2, bombs, $hit_lever, bracelet, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $kill_gohma"
 							],
 							"item_count": 1
 						  },
@@ -1247,7 +2275,7 @@
 								"d4bk, d4sk:5, flippers, $max_jump:2, bombs, $hit_lever, $kill_shroudedstalfos, $kill_normal, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $max_jump:2, $kill_gohma",
 								"d4bk, d4sk:3, [d4sk:5], flippers, $max_jump:2, bombs, $hit_lever, $kill_shroudedstalfos, $kill_normal, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $max_jump:2, $kill_gohma",
 								"d4bk, d4sk:5, flippers, $max_jump:2, bombs, $hit_lever, bracelet, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $max_jump:2, $kill_gohma",
-								"d4bk, d4sk:3, [d4sk:5], flippers, $max_jump:2, bombs, $hit_lever, bracelet, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $max_jump:2, $kill_gohma",
+								"d4bk, d4sk:3, [d4sk:5], flippers, $max_jump:2, bombs, $hit_lever, bracelet, $kill_agunima, $hit_far_lever, $kill_wizzrobe_cart, $max_jump:2, $kill_gohma"
 							],
 							"hosted_item": "d4",
 							"item_count": 0
@@ -1261,17 +2289,177 @@
 							"name": "D4 boss \nkey",
 							"hosted_item": "d4bk",
 							"item_count": 0
-						  },
+						  }
 						  
 						],
 						"map_locations": [
-						  {
-							"map": "holodrum",
-							"x": 578,
-							"y": 68
-						  }
+							{
+								"map": "holodrum",
+								"x": 281,
+								"y": 407,
+								"restrict_visibility_rules": [
+									"d4_d1"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 578,
+								"y": 364,
+								"restrict_visibility_rules": [
+									"d4_d2"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 25,
+								"y": 279,
+						  		"restrict_visibility_rules": [
+									"d4_d3"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 578,
+								"y": 68,
+								"restrict_visibility_rules": [
+									"d4_d4"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 449,
+								"y": 364,
+								"restrict_visibility_rules": [
+									"d4_d5"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 25,
+								"y": 25,
+								"restrict_visibility_rules": [
+									"d4_d6"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 25,
+								"y": 578,
+								"restrict_visibility_rules": [
+									"d4_d7"
+								]
+							},
+							{
+								"map": "subrosia",
+								"x": 12,
+								"y": 12,
+								"restrict_visibility_rules": [
+									"d4_d8"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 194,
+								"y": 25,
+								"restrict_visibility_rules": [
+									"d4_d8"
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "Get ember seeds in \nD4's Miniboss",
+				"access_rules": [
+						"$d4_shuffle",
+						"[$d4_shuffle], $d4_shuffle_hard"
+					],
+				"sections": [
+				  {
+					"name": "Inside the bushes",
+					"access_rules": [
+						"[emberseeds], bracelet, flippers, $max_jump:1, $kill_shroudedstalfos, $destroy_bush_respawn",
+						"[emberseeds], bombs, flippers, $max_jump:1, $kill_shroudedstalfos, $destroy_bush_respawn",
+						"[emberseeds], d4sk:2, flippers, $max_jump:1, $kill_shroudedstalfos, $destroy_bush_respawn"
+					],
+					"hosted_item": "emberseeds",
+					"item_count": 0
+				  }
+				],
+				"map_locations": [
+					{
+						"map": "holodrum",
+						"x": 266,
+						"y": 392,
+						"restrict_visibility_rules": [
+							"d4_d1"
 						]
 					},
+					{
+						"map": "holodrum",
+						"x": 563,
+						"y": 349,
+						"restrict_visibility_rules": [
+							"d4_d2"
+						]
+					},
+					{
+						"map": "holodrum",
+						"x": 40,
+						"y": 264,
+						"restrict_visibility_rules": [
+							"d4_d3"
+						]
+					},
+					{
+						"map": "holodrum",
+						"x": 563,
+						"y": 53,
+						"restrict_visibility_rules": [
+							"d4_d4"
+						]
+					},
+					{
+						"map": "holodrum",
+						"x": 434,
+						"y": 349,
+						"restrict_visibility_rules": [
+							"d4_d5"
+						]
+					},
+					{
+						"map": "holodrum",
+						"x": 40,
+						"y": 40,
+						"restrict_visibility_rules": [
+							"d4_d6"
+						]
+					},
+					  {
+						"map": "holodrum",
+						"x": 40,
+						"y": 563,
+						"restrict_visibility_rules": [
+							"d4_d7"
+						]
+					  },
+					{
+						"map": "subrosia",
+						"x": 19,
+						"y": 19,
+						"restrict_visibility_rules": [
+							"d4_d8"
+						]
+					},
+					  {
+						"map": "holodrum",
+						"x": 179,
+						"y": 40,
+						"restrict_visibility_rules": [
+							"d4_d8"
+						]
+					  }
 				]
 			},
 			{
@@ -1281,10 +2469,95 @@
 				],
 				"children": [
 					{
+						"name": "Check D6 Entrance",
+
+						"access_rules": [
+							"{$d6_access_normal}",
+							"{[$d6_access_normal], $d6_access_hard}"
+						],
+						"sections": [
+							{
+								"name": "D1: Gnarled Root",
+								"hosted_item": "d1_from_d6",
+								"item_count": 0,
+								"visibility_rules": [
+									"d1_ent"
+								]
+							},
+							{
+								"name": "D2: Snake's Remains",
+								"hosted_item": "d2_from_d6",
+								"item_count": 0,
+								"visibility_rules": [
+									"d2_ent"
+								]
+							},
+							{
+								"name": "D3: Poison Moth's Lair",
+								"hosted_item": "d3_from_d6",
+								"item_count": 0,
+								"visibility_rules": [
+									"d3_ent"
+								]
+							},
+							{
+								"name": "D4: Dancing Dragon",
+								"hosted_item": "d4_from_d6",
+								"item_count": 0,
+								"visibility_rules": [
+									"d4_ent"
+								]
+							},
+							{
+								"name": "D5: Unicorn's Cave",
+								"hosted_item": "d5_from_d6",
+								"item_count": 0,
+								"visibility_rules": [
+									"d5_ent"
+								]
+							},
+							{
+								"name": "D6: Ancient Ruins",
+								"hosted_item": "d6_from_d6",
+								"item_count": 0,
+								"visibility_rules": [
+									"d6_ent"
+								]
+							},
+							{
+								"name": "D7: Explorer's Crypt",
+								"hosted_item": "d7_from_d6",
+								"item_count": 0,
+								"visibility_rules": [
+									"d7_ent"
+								]
+							},
+							{
+								"name": "D8: Sword and Shield Maze",
+								"hosted_item": "d8_from_d6",
+								"item_count": 0,
+								"visibility_rules": [
+									"d8_ent"
+								]
+							}
+						],
+						"map_locations": [
+							{
+								// D6 entrance
+								"map": "holodrum",
+								"x": 25,
+								"y": 25,
+								"restrict_visibility_rules": [
+									"$check_d6_entrance_normal"
+								]
+							}
+						]
+					},
+					{
 						"name": "Ancient Ruins",
 						"access_rules": [
 								"$d6_shuffle",
-								"[$d6_shuffle], $d6_shuffle_hard",
+								"[$d6_shuffle], $d6_shuffle_hard"
 							],
 						"sections": [
 						  {
@@ -1298,7 +2571,7 @@
 								"$d6clear",
 								
 								"$max_jump:3",
-								"$max_jump:1, magnet",
+								"$max_jump:1, magnet"
 								],
 							"item_count": 1
 						  },
@@ -1331,7 +2604,7 @@
 								"$d6clear",
 								
 								"d6sk:3, bombs",
-								"d6sk:1, [d6sk:3], bombs",
+								"d6sk:1, [d6sk:3], bombs"
 							],
 							"item_count": 1
 						  },
@@ -1342,7 +2615,7 @@
 								"$d6clear",
 								
 								"d6sk:3, bombs, $max_jump:1",
-								"d6sk:1, [d6sk:3], bombs, $max_jump:1",
+								"d6sk:1, [d6sk:3], bombs, $max_jump:1"
 							],
 							"item_count": 1
 						  },
@@ -1358,7 +2631,7 @@
 								
 								// 2 keys, drops from above to skip opening the block
 								"d6sk:2, bombs, magnet, $destroy_crystal, $max_jump:1",
-								"d6sk:1, [d6sk:2], bombs, magnet, $destroy_crystal, $max_jump:1",
+								"d6sk:1, [d6sk:2], bombs, magnet, $destroy_crystal, $max_jump:1"
 							],
 							"item_count": 1
 						  },
@@ -1428,19 +2701,86 @@
 							"name": "D6 boss \nkey",
 							"hosted_item": "d6bk",
 							"item_count": 0
-						  },
+						  }
 
 						],
 						"map_locations": [
-						  {
-							"map": "holodrum",
-							"x": 25,
-							"y": 25
-						  }
+							{
+								"map": "holodrum",
+								"x": 281,
+								"y": 407,
+								"restrict_visibility_rules": [
+									"d6_d1"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 578,
+								"y": 364,
+								"restrict_visibility_rules": [
+									"d6_d2"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 25,
+								"y": 279,
+						  		"restrict_visibility_rules": [
+									"d6_d3"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 578,
+								"y": 68,
+								"restrict_visibility_rules": [
+									"d6_d4"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 449,
+								"y": 364,
+								"restrict_visibility_rules": [
+									"d6_d5"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 25,
+								"y": 25,
+								"restrict_visibility_rules": [
+									"d6_d6"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 25,
+								"y": 578,
+								"restrict_visibility_rules": [
+									"d6_d7"
+								]
+							},
+							{
+								"map": "subrosia",
+								"x": 12,
+								"y": 12,
+								"restrict_visibility_rules": [
+									"d6_d8"
+								]
+							},
+							{
+								"map": "holodrum",
+								"x": 194,
+								"y": 25,
+								"restrict_visibility_rules": [
+									"d6_d8"
+								]
+							}
 						]
-					},
+					}
 				]
-			},
+			}
 		]
 	},
 	
@@ -1450,11 +2790,104 @@
 		"chest_opened_img": "images/chestopen.png",
 		"children": [
 			{
+				"name": "Check D8 Entrance",
+
+				"access_rules": [
+					"{$d8_access_normal}",
+					"{[$d8_access_normal], $d8_access_hard}"
+				],
+				"sections": [
+					{
+						"name": "D1: Gnarled Root",
+						"hosted_item": "d1_from_d8",
+						"item_count": 0,
+						"visibility_rules": [
+							"d1_ent"
+						]
+					},
+					{
+						"name": "D2: Snake's Remains",
+						"hosted_item": "d2_from_d8",
+						"item_count": 0,
+						"visibility_rules": [
+							"d2_ent"
+						]
+					},
+					{
+						"name": "D3: Poison Moth's Lair",
+						"hosted_item": "d3_from_d8",
+						"item_count": 0,
+						"visibility_rules": [
+							"d3_ent"
+						]
+					},
+					{
+						"name": "D4: Dancing Dragon",
+						"hosted_item": "d4_from_d8",
+						"item_count": 0,
+						"visibility_rules": [
+							"d4_ent"
+						]
+					},
+					{
+						"name": "D5: Unicorn's Cave",
+						"hosted_item": "d5_from_d8",
+						"item_count": 0,
+						"visibility_rules": [
+							"d5_ent"
+						]
+					},
+					{
+						"name": "D6: Ancient Ruins",
+						"hosted_item": "d6_from_d8",
+						"item_count": 0,
+						"visibility_rules": [
+							"d6_ent"
+						]
+					},
+					{
+						"name": "D7: Explorer's Crypt",
+						"hosted_item": "d7_from_d8",
+						"item_count": 0,
+						"visibility_rules": [
+							"d7_ent"
+						]
+					},
+					{
+						"name": "D8: Sword and Shield Maze",
+						"hosted_item": "d8_from_d8",
+						"item_count": 0,
+						"visibility_rules": [
+							"d8_ent"
+						]
+					}
+				],
+				"map_locations": [
+					{
+						// D8 entrance
+						"map": "subrosia",
+						"x": 12,
+						"y": 12,
+						"restrict_visibility_rules": [
+							"$check_d8_entrance_normal"
+						]
+					},
+				    {
+						"map": "holodrum",
+						"x": 194,
+						"y": 25,
+						"restrict_visibility_rules": [
+							"$check_d8_entrance_normal"
+						]
+				  	}
+				]
+			},
+			{
 				"name": "Sword and Shield Maze",
 				"color": "#ff3c00",
 				"access_rules": [
 					"$d8_shuffle",
-					"[$d8_shuffle], $d8_shuffle_hard",
+					"[$d8_shuffle], $d8_shuffle_hard"
 				],
 				"sections": [
 				  {
@@ -1466,7 +2899,7 @@
 						"$destroy_pot, $shoot_seeds",
 						"$destroy_pot, $max_jump:1, satchel, emberseeds, [$shoot_seeds]",
 						"$destroy_pot, $max_jump:1, satchel, scentseeds, [$shoot_seeds]",
-						"$destroy_pot, $max_jump:1, satchel, mysteryseeds, [$shoot_seeds]",
+						"$destroy_pot, $max_jump:1, satchel, mysteryseeds, [$shoot_seeds]"
 					],
 					"item_count": 1
 				  },
@@ -1479,7 +2912,7 @@
 						"$max_jump:1, slingshot2",
 						"$max_jump:1, satchel, emberseeds, [slingshot2]",
 						"$max_jump:1, satchel, mysteryseeds, [slingshot2]",
-						"$max_jump:1, satchel, scentseeds, [slingshot2]",
+						"$max_jump:1, satchel, scentseeds, [slingshot2]"
 					],
 					"item_count": 1
 				  },
@@ -1489,7 +2922,7 @@
 						// Can get every single chest in D8
 						"$d8clear",
 						
-						"$kill_magunesu, $kill_hardhat_magnet",
+						"$kill_magunesu, $kill_hardhat_magnet"
 					],
 					"item_count": 1
 				  },
@@ -1500,7 +2933,7 @@
 						"$d8clear",
 						
 						"d8sk:1, $kill_magunesu, $max_jump:3",
-						"d8sk:1, $kill_magunesu, $max_jump:2, [$max_jump:3]",
+						"d8sk:1, $kill_magunesu, $max_jump:2, [$max_jump:3]"
 					],
 					"item_count": 1
 				  },
@@ -1511,7 +2944,7 @@
 						"$d8clear",
 						
 						"d8sk:2, $kill_magunesu, $max_jump:3",
-						"d8sk:2, $kill_magunesu, $max_jump:2, [$max_jump:3]",
+						"d8sk:2, $kill_magunesu, $max_jump:2, [$max_jump:3]"
 					],
 					"item_count": 1
 				  },
@@ -1522,7 +2955,7 @@
 						"$d8clear",
 						
 						"d8sk:2, $kill_magunesu, $max_jump:3, magnet",
-						"d8sk:2, $kill_magunesu, $max_jump:2, magnet, [$max_jump:3]",
+						"d8sk:2, $kill_magunesu, $max_jump:2, magnet, [$max_jump:3]"
 					],
 					"item_count": 1
 				  },
@@ -1533,7 +2966,7 @@
 						"$d8clear",
 						
 						"d8sk:2, $kill_magunesu, $max_jump:3, magnet",
-						"d8sk:2, $kill_magunesu, $max_jump:2, magnet, [$max_jump:3]",
+						"d8sk:2, $kill_magunesu, $max_jump:2, magnet, [$max_jump:3]"
 					],
 					"item_count": 1
 				  },
@@ -1551,7 +2984,7 @@
 						"d8sk:2, $kill_magunesu, $max_jump:2, magnet, bombs, slingshot2, [$max_jump:3]",
 						"d8sk:2, $kill_magunesu, $max_jump:2, magnet, bombs, satchel, emberseeds, [slingshot2], [$max_jump:3]",
 						"d8sk:2, $kill_magunesu, $max_jump:2, magnet, bombs, satchel, scentseeds, [slingshot2], [$max_jump:3]",
-						"d8sk:2, $kill_magunesu, $max_jump:2, magnet, bombs, satchel, mysteryseeds, [slingshot2], [$max_jump:3]",
+						"d8sk:2, $kill_magunesu, $max_jump:2, magnet, bombs, satchel, mysteryseeds, [slingshot2], [$max_jump:3]"
 						
 					],
 					"item_count": 1
@@ -1564,7 +2997,7 @@
 						
 						"[d8sk:3], $kill_magunesu, $max_jump:3, magnet, [slingshot2], [emberseeds], [magicboomerang], $kill_keese, $kill_polsvoice_pit",
 						"[d8sk:3], $kill_magunesu, $max_jump:2, [$max_jump:3], [slingshot2], [emberseeds], [magicboomerang], $kill_keese, $kill_polsvoice_pit",
-						"[d8sk:3], $kill_magunesu, $max_jump:4, magnet, [slingshot2], [emberseeds], $kill_keese, $kill_polsvoice_pit",
+						"[d8sk:3], $kill_magunesu, $max_jump:4, magnet, [slingshot2], [emberseeds], $kill_keese, $kill_polsvoice_pit"
 					],
 					"item_count": 1
 				  },
@@ -1576,7 +3009,7 @@
 						
 						"d8sk:4, $kill_magunesu, $max_jump:3, magnet, slingshot2, emberseeds, bombs",
 						"d8sk:1, [d8sk:4], $kill_magunesu, $max_jump:4, bombs, [slingshot2], [emberseeds]",
-						"d8sk:4, $kill_magunesu, $max_jump:2, [$max_jump:3], magnet, slingshot2, emberseeds, bombs",
+						"d8sk:4, $kill_magunesu, $max_jump:2, [$max_jump:3], magnet, slingshot2, emberseeds, bombs"
 					],
 					"item_count": 1
 				  },
@@ -1588,7 +3021,7 @@
 						
 						"d8sk:4, $kill_magunesu, $max_jump:3, magnet, slingshot2, emberseeds, bracelet",
 						"d8sk:1, [d8sk:4], $kill_magunesu, $max_jump:4, bracelet, [slingshot2], [emberseeds]",
-						"d8sk:4, $kill_magunesu, $max_jump:2, [$max_jump:3], magnet, slingshot2, emberseeds, bracelet",
+						"d8sk:4, $kill_magunesu, $max_jump:2, [$max_jump:3], magnet, slingshot2, emberseeds, bracelet"
 					],
 					"item_count": 1
 				  },
@@ -1600,7 +3033,7 @@
 						
 						"d8sk:4, $kill_magunesu, $max_jump:3, magnet, slingshot2, emberseeds, bracelet",
 						"d8sk:1, [d8sk:4], $kill_magunesu, $max_jump:4, bracelet, [slingshot2], [emberseeds]",
-						"d8sk:4, $kill_magunesu, $max_jump:2, [$max_jump:3], magnet, slingshot2, emberseeds, bracelet",
+						"d8sk:4, $kill_magunesu, $max_jump:2, [$max_jump:3], magnet, slingshot2, emberseeds, bracelet"
 					],
 					"item_count": 1
 				  },
@@ -1612,7 +3045,7 @@
 						
 						"d8sk:4, $kill_magunesu, $max_jump:3, magnet, slingshot2, emberseeds",
 						"d8sk:1, [d8sk:4], $kill_magunesu, $max_jump:4, [slingshot2], [emberseeds]",
-						"d8sk:4, $kill_magunesu, $max_jump:2, [$max_jump:3], magnet, slingshot2, emberseeds",
+						"d8sk:4, $kill_magunesu, $max_jump:2, [$max_jump:3], magnet, slingshot2, emberseeds" 
 					],
 					"item_count": 1
 				  },
@@ -1626,7 +3059,7 @@
 						"d8bk, d8sk:7, $kill_magunesu, $max_jump:3, magnet, slingshot2, emberseeds, magicboomerang, $hit_lever, bracelet, $kill_medusahead",
 						"d8bk, d8sk:7, $kill_magunesu, $max_jump:2, [$max_jump:3], magnet, slingshot2, emberseeds, magicboomerang, $hit_lever, bracelet, $kill_medusahead",
 						"d8bk, d8sk:7, $kill_magunesu, $max_jump:4, magnet, slingshot2, emberseeds, $hit_lever, bracelet, $kill_medusahead",
-						"d8bk, d8sk:4, [d8bk:7], $kill_magunesu, $max_jump:4, bombs, bracelet, $kill_medusahead, [slingshot2], [emberseeds]",
+						"d8bk, d8sk:4, [d8bk:7], $kill_magunesu, $max_jump:4, bombs, bracelet, $kill_medusahead, [slingshot2], [emberseeds]"
 					],
 					"item_count": 1
 				  },
@@ -1639,7 +3072,7 @@
 						"d8bk, d8sk:7, $kill_magunesu, $max_jump:3, magnet, slingshot2, emberseeds, magicboomerang, $hit_lever, bracelet, $kill_medusahead",
 						"d8bk, d8sk:7, $kill_magunesu, $max_jump:2, [$max_jump:3], magnet, slingshot2, emberseeds, magicboomerang, $hit_lever, bracelet, $kill_medusahead",
 						"d8bk, d8sk:7, $kill_magunesu, $max_jump:4, magnet, slingshot2, emberseeds, $hit_lever, bracelet, $kill_medusahead",
-						"d8bk, d8sk:4, [d8bk:7], $kill_magunesu, $max_jump:4, bracelet, $kill_medusahead, [slingshot2], [emberseeds]",
+						"d8bk, d8sk:4, [d8bk:7], $kill_magunesu, $max_jump:4, bracelet, $kill_medusahead, [slingshot2], [emberseeds]"
 					],
 					"hosted_item": "d8",
 					"item_count": 0
@@ -1653,50 +3086,175 @@
 					"name": "D8 boss \nkey",
 					"hosted_item": "d8bk",
 					"item_count": 0
-				  },
+				  }
 				],
 				"map_locations": [
-				  {
-					"map": "subrosia",
-					"x": 12,
-					"y": 12
-				  },
-				  {
-					"map": "holodrum",
-					"x": 194,
-					"y": 25
-				  }
+					{
+						"map": "holodrum",
+						"x": 281,
+						"y": 407,
+						"restrict_visibility_rules": [
+							"d8_d1"
+						]
+					},
+					{
+						"map": "holodrum",
+						"x": 578,
+						"y": 364,
+						"restrict_visibility_rules": [
+							"d8_d2"
+						]
+					},
+					{
+						"map": "holodrum",
+						"x": 25,
+						"y": 279,
+						  "restrict_visibility_rules": [
+							"d8_d3"
+						]
+					},
+					{
+						"map": "holodrum",
+						"x": 578,
+						"y": 68,
+						"restrict_visibility_rules": [
+							"d8_d4"
+						]
+					},
+					{
+						"map": "holodrum",
+						"x": 449,
+						"y": 364,
+						"restrict_visibility_rules": [
+							"d8_d5"
+						]
+					},
+					{
+						"map": "holodrum",
+						"x": 25,
+						"y": 25,
+						"restrict_visibility_rules": [
+							"d8_d6"
+						]
+					},
+					{
+						"map": "holodrum",
+						"x": 25,
+						"y": 578,
+						"restrict_visibility_rules": [
+							"d8_d7"
+						]
+					},
+					{
+						"map": "subrosia",
+						"x": 12,
+						"y": 12,
+						"restrict_visibility_rules": [
+							"d8_d8"
+						]
+					},
+					{
+						"map": "holodrum",
+						"x": 194,
+						"y": 25,
+						"restrict_visibility_rules": [
+							"d8_d8"
+						]
+					}
 				]
 			},
 			{
 				"name": "Get mystery seeds in \nD8's Frypolar room",
-				"color": "#ff3c00",
 				"access_rules": [
-					"$scent_tree, $enter_remains, $portal_remains, bombs, $portal_d8"
+					"$d8_shuffle",
+					"[$d8_shuffle], $d8_shuffle_hard"
 				],
+				"color": "#ff3c00",
 				"sections": [
 				  {
 					"name": "Respawnable bushes",
 					"access_rules": [
-						"[mysteryseeds], $destroy_bush_respawn, $kill_magunesu, $destroy_pot, $shoot_seeds, $max_jump:3, $kill_hardhat_magnet, magnet",
+						"[mysteryseeds], $destroy_bush_respawn, $kill_magunesu, $destroy_pot, $shoot_seeds, $max_jump:3, $kill_hardhat_magnet, magnet"
 					],
 					"hosted_item": "mysteryseeds",
 					"item_count": 0
 				  }
 				],
 				"map_locations": [
-				  {
-					"map": "subrosia",
-					"x": 19,
-					"y": 19
-				  },
-				  {
-					"map": "holodrum",
-					"x": 210,
-					"y": 40
-				  }
+					{
+						"map": "holodrum",
+						"x": 266,
+						"y": 392,
+						"restrict_visibility_rules": [
+							"d8_d1"
+						]
+					},
+					{
+						"map": "holodrum",
+						"x": 563,
+						"y": 349,
+						"restrict_visibility_rules": [
+							"d8_d2"
+						]
+					},
+					{
+						"map": "holodrum",
+						"x": 40,
+						"y": 264,
+						"restrict_visibility_rules": [
+							"d8_d3"
+						]
+					},
+					{
+						"map": "holodrum",
+						"x": 563,
+						"y": 53,
+						"restrict_visibility_rules": [
+							"d8_d4"
+						]
+					},
+					{
+						"map": "holodrum",
+						"x": 434,
+						"y": 349,
+						"restrict_visibility_rules": [
+							"d8_d5"
+						]
+					},
+					{
+						"map": "holodrum",
+						"x": 40,
+						"y": 40,
+						"restrict_visibility_rules": [
+							"d8_d6"
+						]
+					},
+					  {
+						"map": "holodrum",
+						"x": 40,
+						"y": 563,
+						"restrict_visibility_rules": [
+							"d8_d7"
+						]
+					  },
+					{
+						"map": "subrosia",
+						"x": 19,
+						"y": 19,
+						"restrict_visibility_rules": [
+							"d8_d8"
+						]
+					},
+					  {
+						"map": "holodrum",
+						"x": 179,
+						"y": 40,
+						"restrict_visibility_rules": [
+							"d8_d8"
+						]
+					  }
 				]
-			},
+			}
 		]
 	}
 ]

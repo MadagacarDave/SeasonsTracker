@@ -145,8 +145,20 @@ function suburbs_hard()
 	--suburbs_sunken() or NOT BLOCKED BY SPRING ANYMORE
 	suburbs_natzu()
 end
-
-
+function suburbs_from_south()
+	return (use_seeds() and has("emberseeds")) or 
+	suburbs_swamp() or
+	suburbs_lake() or
+	suburbs_temple() or
+	suburbs_hns() 
+end
+function suburbs_from_south_hard()
+	return (use_seeds() and has("emberseeds")) or 
+	suburbs_swamp() or
+	suburbs_lake() or
+	suburbs_temple_hard() or
+	suburbs_hns_hard()
+end
 
 function suburbs_swamp()
 --portal_swamp() doesn't work? TODO
@@ -214,6 +226,7 @@ end
 
 function fairy_fountain_natzu()
 	return north_stump() and has("bracelet") and
+	(has("suburbs_spring") or has("spring")) and
 	--cross natzu
 	((has("natzu_dimitri") and (dimitri() or has("flippers")) and max_jump() >= 1) or --cross dimitri's natzu
 	(has("natzu_moosh") and (moosh() or (destroy_bush_flute() and max_jump() >= 3))) or --crosh Moosh's natzu
@@ -221,6 +234,7 @@ function fairy_fountain_natzu()
 end
 function fairy_fountain_natzu_hard()
 	return north_stump() and has("bracelet") and
+	(has("suburbs_spring") or has("spring")) and
 	--cross natzu
 	((has("natzu_dimitri") and (dimitri() or has("flippers")) and max_jump() >= 1) or --cross dimitri's natzu
 	(has("natzu_moosh") and (moosh() or 
@@ -313,7 +327,7 @@ end
 
 function scent_suburbs()
 	--only path that doesn't require any of the above items
-	return village_to_suburbs() and
+	return suburbs_from_south() and
 	suburbs_to_fountain() and
 	(has("spring") or has("suburbs_spring")) and--climb up to natzu area
 	cross_natzu()
@@ -367,14 +381,14 @@ end
 function swamp_stump()
 	return pegasus_tree() and
 	(has("bracelet") or hit_lever()) and
-	((has("satchel") and has("pegasusseeds")) or has("flippers") or has("cape") or
+	((has("satchel") and has("pegasusseeds")) or has("flippers") or has("feather") or
 	(has("bombs") and max_jump() >= 2)) and
 	has("bracelet") and has("d3key")
 end
 function swamp_stump_hard()
 	return pegasus_tree_hard() and
 	(has("bracelet") or hit_lever()) and
-	((has("satchel") and has("pegasusseeds")) or has("flippers") or has("cape") or
+	((has("satchel") and has("pegasusseeds")) or has("flippers") or has("feather") or
 	(has("bombs") and max_jump() >= 2)) and
 	has("bracelet") and has("d3key")
 end
@@ -1061,19 +1075,9 @@ function portal_village_hard()
 end
 
 function portal_remains()
-	if destroy_bush() and
+	return destroy_bush() and
 		max_jump() >= 1 and has("winter") and
-		(has("temple_fall") or has("fall")) then
-		return true, AccessibilityLevel.Normal
-	elseif (has("temple_winter") or has("winter")) and
-		((has("shovel") and destroy_bush() and max_jump() >= 4) or
-		((has("temple_spring") or has("spring")) and destroy_flower() and destroy_bush() and max_jump() >= 4 and has("winter")) or
-		((has("temple_summer") or has("summer")) and destroy_bush() and max_jump() >= 4 and has("winter")) or
-		((has("temple_fall") or has("fall")) and destroy_bush() and max_jump() >= 1 and has("winter"))) then
-		return true, AccessibilityLevel.SequenceBreak
-	else
-		return false, AccessibilityLevel.None
-	end	
+		(has("temple_fall") or has("fall"))
 end
 function portal_remains_hard()
 	return (has("temple_winter") or has("winter")) and
@@ -1084,19 +1088,10 @@ function portal_remains_hard()
 end
 
 function portal_d8()
-	if has("temple_summer") or has("summer") then
-		if max_jump() >= 4 or 
-			(max_jump() >= 2 and has("glove")) then
-			return true, AccessibilityLevel.Normal
-		elseif max_jump() >= 1 and has("bombs") then
-			return true, AccessibilityLevel.SequenceBreak
-		else
-			return false, AccessibilityLevel.None
-		end
-	else
-		return false, AccessibilityLevel.None
-	end
+	return (has("temple_summer") or has("summer")) and
+		(max_jump() >= 4 or (max_jump() >= 2 and has("glove")))
 end
+
 function portal_d8_hard()
 	return (has("temple_summer") or has("summer")) and
 	(((max_jump() >= 2 or (max_jump() >= 1 and has("bombs"))) and has("glove")) or max_jump() >= 4)
@@ -1147,7 +1142,7 @@ function d3clear_hard()
 end
 
 function d4clear()
-	return has("flippers") and destroy_pot() and 
+	return has("flippers") and has("bracelet") and 
 	has("bombs") and max_jump() >= 1 and 
 	shoot_seeds() and has("emberseeds") and 
 	kill_agunima() and kill_gohma()
